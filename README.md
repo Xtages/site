@@ -21,12 +21,12 @@ run `npm run build`.
 
 This will:
 
-* Delete [dist/]
+* Delete [dist/](dist/)
 * Optimize images
 * Clean & Optimize CSS
 * Optimize JS
-* Leave the final html and asset files [dist/]
+* Leave the final html and asset files [dist/](dist/)
 
 ## Publishing
 
-Take everything under [dist/] and publish it.
+Take everything under [dist/](dist/) and publish it.
