@@ -115,10 +115,9 @@ function clean() {
 	]);
 }
 
-//  BrowserSync
+// Live realoading 
 
 // Initialize the browsersync
-
 function browserSyncInit(done) {
 	browserSync.init({
 		server: {
@@ -126,12 +125,6 @@ function browserSyncInit(done) {
 		},
 		port: 3000
 	});
-	done();
-}
-
-// BrowserSync Reload (callback)
-function browserSyncReload(done) {
-	browserSync.reload();
 	done();
 }
 

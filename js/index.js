@@ -9,7 +9,7 @@ feather.replace({
     'height': '1em',
 });
 
-(function maybeShowCookies() {
+function maybeShowCookiesModal() {
     const $modal = $("#modal-cookies");
 
     function show($this) {
@@ -31,4 +31,5 @@ feather.replace({
             localStorage.setItem('modal_cookies', 1);
         })
     }
-})();
+}
+maybeShowCookiesModal();
