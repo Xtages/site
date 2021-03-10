@@ -2,6 +2,9 @@
 
 This is the landing page used in xtages.com
 
+# Deployment
+To access the AWS Console in our Amplify project click [here](https://console.aws.amazon.com/amplify/home?region=us-east-1#/d36l47rod7uck9) 
+
 # Prerequisites
 
 * Install [nodejs](https://nodejs.org/en/download/).
@@ -12,8 +15,6 @@ This is the landing page used in xtages.com
 # Development
 
 * Run `npm run dev` which will bring up a server with live reloading and open the page on your browser
-
-# Deployment
 
 ## Build 
 
