@@ -1,0 +1,36 @@
+// Bootstrap functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Custom variables
+@import "custom/variables";
+
+// Quick functions
+@import "../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/functions";
+
+@import "../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/variables";
+
+// Custom fonts
+@import "custom/fonts";
+
+// Bootstrap core
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Quick mixins
+@import "../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/mixins";
+
+// Bootstrap components
+@import "core/bootstrap";
+
+// Quick utilities
+@import "../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/utilities";
+
+// Quick components
+@import "../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/components";
+
+// Quick libs
+// @import "../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/libs";
+
+// Custom styles (User's file)
+@import "custom/styles";
