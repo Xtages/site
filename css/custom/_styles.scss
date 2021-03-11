@@ -2,3 +2,37 @@
 //
 // This is the place where you should place all additional styles and imports.
 // This will allow you to take advantage of future updates with lower time consumed on the upgrade process.
+
+.calendly {
+    border: none;
+    height: 700px;
+    width: 280px;
+}
+
+@include media-breakpoint-up(sm) {
+    .calendly {
+      height: 600px;
+      width: 500px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .calendly {
+      height: 600px;
+      width: 700px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .calendly {
+      height: 600px;
+      width: 400px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .calendly {
+      height: 600px;
+      width: 500px;
+    }
+}
