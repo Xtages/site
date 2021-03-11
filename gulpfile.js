@@ -11,6 +11,7 @@ const del = require('del');
 const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
+const purgecss = require('gulp-purgecss')
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const source = require('vinyl-source-stream');
@@ -50,6 +51,10 @@ function compileScss() {
 		.pipe(postcss([require('postcss-flexbugs-fixes')]))
 		.pipe(autoprefixer())
 		.pipe(cleanCss())
+		.pipe(purgecss({
+			content: [paths.dist.base + '/*.html'],
+			safelist: ['show'],
+		}))
 		.pipe(rename({
 			suffix: '.min'
 		}))
