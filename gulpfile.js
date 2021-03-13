@@ -123,14 +123,17 @@ function clean() {
 // Live realoading 
 
 // Initialize the browsersync
-function browserSyncInit(done) {
+function browserSyncInit(openTab) {
+	return function(done) {
 	browserSync.init({
 		server: {
 			baseDir: paths.dist,
 		},
-		port: 3000
+		port: 3000,
+		open: openTab ? 'local' : false,
 	});
 	done();
+}
 }
 
 function watchFiles() {
@@ -140,7 +143,6 @@ function watchFiles() {
 	watch(paths.src.html, copyHtml);
 }
 
-const livereload = series(browserSyncInit, watchFiles);
 
 // Build everything
 const build = series(clean, copyImages, copyHtml, compileScss, compileJs);
@@ -148,10 +150,18 @@ const build = series(clean, copyImages, copyHtml, compileScss, compileJs);
 // Build and start the livereload server
 function dev() {
 	production = false;
-    return series(build, livereload)();
+    return series(build, browserSyncInit(true), watchFiles)();
+}
+
+// Build and start the livereload server but don't open a new
+// browser tab.
+function devNoOpen() {
+	production = false;
+    return series(build, browserSyncInit(false), watchFiles)();
 }
 
 exports.clean = clean;
 exports.dev = dev;
+exports.devNoOpen = devNoOpen;
 exports.build = build;
 exports.default = build;
