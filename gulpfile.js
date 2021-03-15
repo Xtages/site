@@ -124,16 +124,16 @@ function clean() {
 
 // Initialize the browsersync
 function browserSyncInit(openTab) {
-	return function(done) {
-	browserSync.init({
-		server: {
-			baseDir: paths.dist,
-		},
-		port: 3000,
-		open: openTab ? 'local' : false,
-	});
-	done();
-}
+	return function browserReload(done) {
+		browserSync.init({
+			server: {
+				baseDir: paths.dist,
+			},
+			port: 3000,
+			open: openTab ? 'local' : false,
+		});
+		done();
+	}
 }
 
 function watchFiles() {
@@ -150,14 +150,14 @@ const build = series(clean, copyImages, copyHtml, compileScss, compileJs);
 // Build and start the livereload server
 function dev() {
 	production = false;
-    return series(build, browserSyncInit(true), watchFiles)();
+	return series(build, browserSyncInit(true), watchFiles)();
 }
 
 // Build and start the livereload server but don't open a new
 // browser tab.
 function devNoOpen() {
 	production = false;
-    return series(build, browserSyncInit(false), watchFiles)();
+	return series(build, browserSyncInit(false), watchFiles)();
 }
 
 exports.clean = clean;
