@@ -140,22 +140,28 @@
                         </p>
                     </div>
                     <div class="col-lg-6">
-
                         <!-- Form -->
-                        <form id="form-contact">
+                        <div id="contact-thanks" class="text-center alert alert-success" role="alert"
+                            style="display: none;">Thank you for contacting us. We'll be in touch shortly.</div>
+                        <form 
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSfQHOh4OGZOfMapgAH3yTfKqzbHiM6fc1sqpDLVZOQ_DKgTfA/formResponse"
+                            onsubmit="return window.submitContactForm(this);">
                             <div class="form-group">
-                                <input class="form-control form-control-lg" type="text" placeholder="Your name">
+                                <input class="form-control form-control-lg" type="text" placeholder="Your name"
+                                    name="entry.598134106">
                             </div>
                             <div class="form-group">
                                 <input class="form-control form-control-lg" type="email" placeholder="email@example.com"
-                                    required>
+                                    required name="entry.1699378977">
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control form-control-lg" data-toggle="autosize"
-                                    placeholder="How can we help?" rows="3" required></textarea>
+                                    placeholder="How can we help?" rows="3" required name="entry.628531844"></textarea>
                             </div>
+                            <input aria-hidden="true" name="___honey___pot" style="display: none" />
+                            <!-- bot protection -->
 
-                            <small id="passwordHelpBlock" class="form-text text-white">
+                            <small class="form-text text-white">
                                 We respect your privacy and will never sell your information.
                             </small>
                             <div class="text-center">

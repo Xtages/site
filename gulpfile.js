@@ -140,7 +140,7 @@ function watchFiles() {
 	watch(paths.src.js, compileJs);
 	watch(paths.src.css, compileScss);
 	watch(paths.src.img, copyImages);
-	watch(paths.src.html, copyHtml);
+	watch(paths.src.html, series(copyHtml, compileScss));
 }
 
 
