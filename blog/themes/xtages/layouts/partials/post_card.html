@@ -1,0 +1,32 @@
+<div class="col-xl-4 col-md-6">
+    <div class="card hover-translate-y-n3 hover-shadow-lg overflow-hidden">
+        <div class="position-relative overflow-hidden">
+            <a href="{{.Permalink}}" class="d-block">
+                <img alt="{{.Params.featured_image_alt_text}}" src="{{.Permalink}}/{{.Params.featured_image}}" class="card-img-top">
+            </a>
+        </div>
+        <div class="card-body py-4">
+            <small class="d-block text-sm mb-2">25 April, 2020</small>
+            <div class="mb-2">
+                {{ range .Params.tags }}
+                    <span class="badge badge-success badge-pill">{{- . -}}</span>
+                {{ end }}
+            </div>
+            <a href="{{.Permalink}}" class="h5 stretched-link lh-150">{{ .Title }}</a>
+            <p class="mt-3 mb-0 lh-170">{{ .Summary }}</p>
+        </div>
+        <div class="card-footer border-0 delimiter-top">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    {{ with index $.Site.Params.authors .Params.author }}
+                    <span class="avatar avatar-sm bg-primary rounded-circle">{{ .initials }}</span>
+                    <span class="text-sm mb-0 avatar-content">by {{ .name }}</span>
+                    {{ end }}
+                </div>
+                <div class="col text-right">
+                    <span class="text-muted text-xs">{{.ReadingTime}} min</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

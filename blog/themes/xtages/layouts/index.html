@@ -1,0 +1,53 @@
+{{ define "main" }}
+<!-- Main content -->
+<section class="slice slice-lg py-5 bg-cover bg-size--cover"
+    style="background-image: url(img/img-5.jpg);">
+    <span class="mask bg-dark opacity-4"></span>
+    <div class="container d-flex align-items-center" data-offset-top="#navbar-main">
+        <div class="col py-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-7 col-lg-7 text-center">
+                    <h1 class="display-2 text-light mb-2">The Lifecycle</h1>
+                    <p class="text-light text-lg">A blog where we'll explore all the facets of developing and deliver software. The good, the bad and the terrible.</p>
+                    <p class="text-light text-lg">In here we will attempt to understand what makes great software and most importantly what makes great software development teams tick.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="border-bottom">
+    <div class="container py-3">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                By tag:
+                <ul class="nav">
+                    {{ range .Site.Taxonomies.tags }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{- partial "search.html" . -}}
+        </div>
+    </div>
+</section> -->
+<section class="slice pt-5 pb-7 bg-section-secondary">
+    {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+    {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
+    {{/* Create a variable with that section to use in multiple places. */}}
+    {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+    {{/* Check to see if the section is defined for ranging through it */}}
+    {{ $section_count := len $section }}
+    {{ if ge $section_count 1 }}
+        <div class="container">
+            <div class="row">
+                {{ range (first $section_count $section) }}
+                    {{ partial "post_card.html" . }}
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+</section>
+
+{{ end }}

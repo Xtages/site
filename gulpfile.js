@@ -8,6 +8,7 @@ const browserify = require('browserify');
 const buffer = require('vinyl-buffer');
 const cleanCss = require('gulp-clean-css');
 const del = require('del');
+const { exec } = require('child_process');
 const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
@@ -17,7 +18,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const source = require('vinyl-source-stream');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
-const { sync } = require('fast-glob');
 
 let production = true;
 
@@ -40,6 +40,9 @@ var paths = {
 		css: './css/**/*.scss',
 		js: './js/**/*.js',
 		img: './img/**/*.+(png|jpg|gif|svg|ico)',
+	},
+	blog: {
+		base: './blog'
 	}
 }
 
@@ -55,7 +58,7 @@ function compileScss() {
 			content: [paths.dist.base + '/*.html'],
 			safelist: {
 				standard: ['show'],
-			    deep: [/lb-*/, /lightbox*/]
+				deep: [/lb-*/, /lightbox*/]
 			}
 			// safelist: ['show', 'lb-*', 'ligthbox'],
 		}))
@@ -124,6 +127,26 @@ function clean() {
 	]);
 }
 
+// Builds the blog for publishing
+function buildBlog(done) {
+	execHugo('', done);
+}
+
+// Serves the blog to develop posts
+function serveBlog(done) {
+	execHugo('server -D', done);
+}
+
+function execHugo(params, done) {
+	const proc = exec(`hugo ${params}`, {
+		cwd: paths.blog.base
+	}, function (err, stdout, stderr) {
+		done(err);
+	});
+	proc.stdout.on('data', console.log);
+	proc.stderr.on('data', console.error);
+}
+
 // Live realoading 
 
 // Initialize the browsersync
@@ -151,7 +174,7 @@ function watchFiles() {
 
 
 // Build everything
-const build = series(clean, copyImages, copyHtml, compileScss, compileJs);
+const build = series(clean, copyImages, copyHtml, compileScss, compileJs, buildBlog);
 
 // Build and start the livereload server
 function dev() {
@@ -169,5 +192,6 @@ function devNoOpen() {
 exports.clean = clean;
 exports.dev = dev;
 exports.devNoOpen = devNoOpen;
+exports.serveBlog = serveBlog;
 exports.build = build;
 exports.default = build;

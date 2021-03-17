@@ -11,10 +11,18 @@ To access the AWS Console in our Amplify project click [here](https://console.aw
 * Clone [this repo](https://github.com/Xtages/site)
 * Run `npm install`
 * Run `npm install --global gulp-cli`
+* Run `npm install --global postcss-cli`
+* Run `brew install hugo`
   
 # Development
 
+## Main site
+
 * Run `npm run dev` which will bring up a server with live reloading and open the page on your browser
+
+## Blog
+
+* Run `npm run devBlog` which will bring up a `hugo` server
 
 ## Build 
 

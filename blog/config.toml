@@ -1,0 +1,26 @@
+baseURL = "https://www.xtages.org/blog"
+languageCode = "en-us"
+title = "Xtages Blog - Build, test and deploy your code faster"
+theme = "xtages"
+staticDir = ['static']
+googleAnalytics = "UA-190737020-1"
+publishDir = "../dist/blog"
+
+[params]
+    description = """
+The Lifecycle.
+A blog where we'll explore all the facets of developing and deliver software. The good, the bad and the terrible.
+In here we will attempt to understand what makes great software and most importantly what makes great software development teams tick.
+"""
+    images = ["img/img-5.jpg"]
+    [params.authors]
+        [params.authors.czuniga]
+            name = "Carlos Zuniga"
+            initials = "CZ"
+        [params.authors.mdellamerlina]
+            name = "Matias Dell Amerlina"
+            initials = "MDA"
+        [params.authors.xtages]
+            name = "The Xtages Team"
+            initials = "X"
+
