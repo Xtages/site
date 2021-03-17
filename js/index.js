@@ -35,15 +35,15 @@ feather.replace({
 // }
 // maybeShowCookiesModal();
 
-function maybeDoGtag(method, event, args_map) {
+function maybeDoGtag(method, event, argsMap) {
     if (window['gtag']) {
-        window['gtag'](method, event, args_map);
-    } else if (args_map['event_callback']) {
-        args_map['event_callback']();
+        window['gtag'](method, event, argsMap);
+    } else if (argsMap['event_callback']) {
+        argsMap['event_callback']();
     }
 }
 
-(function submitSubscribeForm(formEl) {
+(function registerSubmitSubscribeForm(formEl) {
     window['submitSubscribeForm'] = function (formEl) {
         function showThanks() {
             const thanks = document.getElementById('subscribe-thanks');
@@ -83,7 +83,7 @@ function maybeDoGtag(method, event, args_map) {
 })();
 
 
-(function submitContactForm(formEl) {
+(function registerSubmitContactForm(formEl) {
     window['submitContactForm'] = function (formEl) {
         function showThanks() {
             const thanks = document.getElementById('contact-thanks');
@@ -126,4 +126,19 @@ function maybeDoGtag(method, event, args_map) {
     lightbox.option({
         'resizeDuration': 300,
     });
+})();
+
+(function registerCapturePurchase(anchor, planName) {
+    window['capturePurchase'] = function capturePurchase(anchor, planName) {
+        maybeDoGtag('event', 'select_content', {
+            'content_type': 'product',
+            'items': [{
+                'id': planName,
+                'name': planName,
+            }],
+            'event_callback': function () {
+                document.location = anchor.href;
+            }
+        });
+    }
 })();
