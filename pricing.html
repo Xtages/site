@@ -4,9 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Pricing">
-    <meta name="author" content="Xtages">
-    <title>Xtages - From zero to startup in no time</title>
+    <title>Xtages - Build, test and deploy your code faster</title>
+    <meta property="title" content="Xtages: Build, test and deploy your code faster">
+    <meta name="description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="og:title" content="Xtages: Build, test and deploy your code faster">
+    <meta property="og:site_name" content="Xtages">
+    <meta property="og:url" content="https://www.xtages.com">
+    <meta property="og:description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://www.xtages.com/img/infographic_2.png">
+    <meta property="twitter:site" content="@xtages">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.xtages.com">
+    <meta property="twitter:title" content="Xtages: Build, test and deploy your code faster">
+    <meta property="twitter:description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="twitter:image" content="https://www.xtages.com/img/infographic_2.png">
     <!-- Preloader -->
     <style>
         @keyframes hidePreloader {
@@ -49,13 +64,15 @@
         }
     </style>
     <script>
-        window.addEventListener("load", function () {
+        document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
                 document.querySelector('body').classList.add('loaded');
             }, 100);
         });
     </script>
-    <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+    <link rel="icon" type="image/svg+xml" href="/img/logo_color_small.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/img/logo_color_small.svg" color="#000000">
     <link rel="stylesheet" href="css/index.min.css" id="stylesheet">
 </head>
 
@@ -66,31 +83,14 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
-        aria-labelledby="modal-cookies" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-            <div class="modal-content bg-dark-dark">
-                <div class="modal-body">
-                    <!-- Text -->
-                    <p class="text-sm text-white mb-3">
-                        We use cookies so that our themes work for you. By using our website, you agree to our use of
-                        cookies.
-                    </p>
-                    <!-- Buttons -->
-                    <a href="terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
-                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header -->
-    <header class="" id="header-main">
+    <header id="header-main">
         <!-- Navbar -->
         <nav class="navbar navbar-main navbar-expand-lg navbar-light" id="navbar-main">
             <div class="container">
                 <!-- Brand -->
-                <a class="navbar-brand" href="../../index.html">
-                    <img alt="Image placeholder" src="../../assets/img/brand/dark.svg" id="navbar-logo">
+                <a href="../../index.html">
+                    <img alt="Xtages Logo" src="img/logo_color.svg" height="42">
                 </a>
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
@@ -110,6 +110,11 @@
                     <!-- Main navigation -->
                     <ul class="navbar-nav ml-lg-auto">
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item-spaced d-none d-lg-block">
                             <a class="nav-link" href="contact.html">
                                 Contact
                             </a>
@@ -128,7 +133,7 @@
         <div class="container position-relative zindex-100">
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-7 col-md-9">
-                    <h3 class="h2 lh-170">Welcome to the new generation of <strong>Bootstrap Themes</strong></h3>
+                    <h3 class="h2 lh-170">Build, test and deploy your code <strong>faster</strong>.</h3>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -137,65 +142,64 @@
                         <div class="row pricing mb-3 mt-4 shadow-none">
                             <div class="col-lg-4">
                                 <div class="card card-pricing border-0 text-center px-3">
-                                    <div class="card-header py-5 border-0 delimiter-bottom">
-                                        <div class="h1 text-center mb-0" data-pricing-value="196">$<span
-                                                class="price font-weight-bolder">49</span></div>
-                                        <span class="h6 text-muted">Standard License</span>
+                                    <div class="card-header border-0 delimiter-bottom">
+                                        <h2 class="h3 text-muted">Free
+                                        </h2>
+                                        <p class="mb-1">
+                                            <small><mark>(Starter after 14 days)</mark></small>
+                                        </p>
                                     </div>
                                     <div class="card-body">
                                         <ul class="list-unstyled text-sm mb-4">
-                                            <li>1 end product</li>
-                                            <li>Use for personal or a client</li>
-                                            <li>Use in a free end product</li>
-                                            <li>6 months technical support</li>
+                                            <li>1 project </li>
+                                            <li>2 contributors</li>
+                                            <li>100 CI/CD credits</li>
+                                            <li>1 GB of storage</li>
+                                            <li>2 GB of data-transfer</li>
                                         </ul>
-                                        <a href="#"
-                                            class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Purchase
-                                            now</a>
+                                        <a href="#join-title"
+                                            class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Keep
+                                            me updated</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="card card-pricing text-center px-3 shadow border-0">
-                                    <div class="card-header py-5 border-0 delimiter-bottom">
-                                        <div class="h1 text-center mb-0" data-pricing-value="294">$<span
-                                                class="price font-weight-bolder">98</span></div>
-                                        <span class="h6 text-muted">Developer License</span>
+                                    <div class="card-header border-0 delimiter-bottom">
+                                        <h2 class="h3 text-muted">Starter</h2>
                                     </div>
                                     <div class="card-body">
                                         <ul class="list-unstyled text-sm mb-4">
-                                            <li>3 end products</li>
-                                            <li>Use for personal or a client</li>
-                                            <li>Use in a free end product</li>
-                                            <li>10.000 page views</li>
-                                            <li>6 months technical support</li>
+                                            <li>2 project </li>
+                                            <li>4 contributors</li>
+                                            <li>2500 CI/CD credits</li>
+                                            <li>10 GB of storage</li>
+                                            <li>20 GB of data-transfer</li>
+                                            <li>Support over email</li>
                                         </ul>
-                                        <a href="#"
-                                            class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Purchase
-                                            now</a>
+                                        <a href="#join-title"
+                                            class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Keep
+                                            me updated</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="card card-pricing bg-primary border-0 text-center px-3">
-                                    <div class="card-header py-5 border-0 delimiter-bottom">
-                                        <div class="h1 text-white text-center mb-0" data-pricing-value="2360">$<span
-                                                class="price font-weight-bolder">590</span></div>
-                                        <span class="h6 text-white">Extended License</span>
+                                    <div class="card-header border-0 delimiter-bottom">
+                                        <h2 class="h3 text-white">Professional</h2>
                                     </div>
                                     <div class="card-body">
                                         <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                                            <li>1 end product</li>
-                                            <li>Use for personal or a client</li>
-                                            <li>Use in a free end product</li>
-                                            <li>Use in a product that is <strong
-                                                    class="text-success text-underline--dashed">sold</strong></li>
-                                            <li>Third-party integration</li>
-                                            <li>12 months technical support</li>
+                                            <li>5 project </li>
+                                            <li>10 contributors</li>
+                                            <li>7500 CI/CD credits</li>
+                                            <li>100 GB of storage</li>
+                                            <li>500 GB of data-transfer</li>
+                                            <li>Support over email with 24hr SLA</li>
                                         </ul>
-                                        <a href="#"
-                                            class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Purchase
-                                            now</a>
+                                        <a href="#join-title"
+                                            class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Keep
+                                            me updated</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +221,7 @@
         <div class="container pt-lg-7">
             <div class="row mb-2 justify-content-center text-center">
                 <div class="col-lg-8 col-md-10">
-                    <h3 class=" mt-4">Join our mailing list</h3>
+                    <h3 id="join-title" class="mt-4">Join our mailing list</h3>
                     <div class="mt-3">
                         <p class="lead lh-180">Stay tuned and be the first to know when you can try out Xtages.
                         </p>
@@ -255,12 +259,7 @@
         <div class="container pt-lg-7">
             <div class="row mb-6 justify-content-center text-center">
                 <div class="col-lg-8 col-md-10">
-                    <h3 class=" mt-4">What's in the box</h3>
-                    <div class="mt-3">
-                        <p class="lead lh-180">Thousands of developers around the world have already made Quick the
-                            main
-                            tool for building websites.</p>
-                    </div>
+                    <h3 class=" mt-4">Addons</h3>
                 </div>
             </div>
             <div class="row mx-lg-n4">
@@ -270,43 +269,13 @@
                         <div class="p-3 d-flex">
                             <div>
                                 <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                                    <i data-feather="check"></i>
+                                    <i data-feather="database"></i>
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">100% Responsive</span>
+                                <span class="h6">Additional 10GB of storage <small>(per month)</small></span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Based on Bootstrap 4</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Built with SASS</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
+                                    Store more artifacts and logs.
                                 </p>
                             </div>
                         </div>
@@ -317,44 +286,14 @@
                     <div class="card shadow-none">
                         <div class="p-3 d-flex">
                             <div>
-                                <div class="icon icon-shape rounded-circle bg-success text-white mr-4">
-                                    <i data-feather="check"></i>
+                                <div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
+                                    <i data-feather="user"></i>
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">300+ components</span>
+                                <span class="h6">Contributors <small>(per month)</small></span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-dark text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">23+ widgets</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                                    <i data-feather="check"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Bootstrap Flexbox Grid</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
+                                    Grow your team.
                                 </p>
                             </div>
                         </div>
@@ -365,50 +304,14 @@
                     <div class="card shadow-none">
                         <div class="p-3 d-flex">
                             <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-info text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
+                                <div class="icon icon-shape rounded-circle bg-success text-white mr-4">
+                                    <i data-feather="repeat"></i>
                                 </div>
                             </div>
                             <div>
-                                <span class="h6">Animate CSS</span>
+                                <span class="h6">1000 CI/CD credits <small>(per month)</small></span>
                                 <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Integrated plugins</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow-none">
-                        <div class="p-3 d-flex">
-                            <div>
-                                <div>
-                                    <div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
-                                        <i data-feather="check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="h6">Smart HTML markup</span>
-                                <p class="text-sm text-muted mb-0">
-                                    Built to be customized.
+                                    Run more builds or get beefier instances.
                                 </p>
                             </div>
                         </div>
@@ -431,75 +334,68 @@
             <!-- Section title -->
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-8 col-md-10">
-                    <h2 class="text-white mt-4">Helpful answers</h2>
-                    <div class="mt-2">
-                        <p class="lead lh-180 text-white">Start building fast, beautiful and modern looking websites
-                            in
-                            no time using our theme.</p>
-                    </div>
+                    <h2 class="text-white mt-4">Frequently asked questions</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-6">
                     <div id="accordion-1" class="accordion accordion-spaced">
-                        <!-- Accordion card 1 -->
                         <div class="card">
                             <div class="card-header py-4" id="heading-1-1" data-toggle="collapse" role="button"
                                 data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                                <h6 class="mb-0"><i data-feather="file" class="mr-3"></i>Which license do I need?
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>How can I use my
+                                    credits?
                                 </h6>
                             </div>
                             <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
                                 data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                        dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et.</p>
+                                    <p>Credits are used to pay for your usage of CI/CD pipelines and you can spend them
+                                        in any combination of instances.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card 2 -->
+                        <div class="card">
+                            <div class="card-header py-4" id="heading-1-1" data-toggle="collapse" role="button"
+                                data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Do credits expire?
+                                </h6>
+                            </div>
+                            <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
+                                data-parent="#accordion-1">
+                                <div class="card-body">
+                                    <p>No, your credits don't expire, however unused credits will be forfeited if you
+                                        cancel your subscription.</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-header py-4" id="heading-1-2" data-toggle="collapse" role="button"
                                 data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                                <h6 class="mb-0"><i data-feather="unlock" class="mr-3"></i>How do I get access to a
-                                    theme?</h6>
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Can I change my instance
+                                    once
+                                    selected?</h6>
                             </div>
                             <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
                                 data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                        dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et.</p>
+                                    <p>Yes, you can change your configuration at any time.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card 3 -->
                         <div class="card">
                             <div class="card-header py-4" id="heading-1-3" data-toggle="collapse" role="button"
                                 data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
-                                <h6 class="mb-0"><i data-feather="folder" class="mr-3"></i>How do I see previous
-                                    orders?
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>What if I need a
+                                    different
+                                    instance or platform?
                                 </h6>
                             </div>
                             <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
                                 data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                        dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et.</p>
+                                    <p>We plan to keep expanding our offerings with ARM, GPU, more hardware specs and
+                                        macOS in the near future. Drop us a line if you have more specific needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -507,64 +403,61 @@
                 </div>
                 <div class="col-xl-6">
                     <div id="accordion-2" class="accordion accordion-spaced">
-                        <!-- Accordion card 1 -->
                         <div class="card">
                             <div class="card-header py-4" id="heading-2-1" data-toggle="collapse" role="button"
                                 data-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
-                                <h6 class="mb-0"><i data-feather="file" class="mr-3"></i>Which license do I need?
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>What happens at the end
+                                    of my
+                                    free trial?
                                 </h6>
                             </div>
                             <div id="collapse-2-1" class="collapse" aria-labelledby="heading-2-1"
                                 data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                        dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et.</p>
+                                    <p>Your accound will be upgraded to the Starter plan and charged accordingly.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card 2 -->
                         <div class="card">
                             <div class="card-header py-4" id="heading-2-2" data-toggle="collapse" role="button"
                                 data-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
-                                <h6 class="mb-0"><i data-feather="unlock" class="mr-3"></i>How do I get access to a
-                                    theme?</h6>
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Is it possible to stay
+                                    in my
+                                    plan but increase some limits?</h6>
                             </div>
                             <div id="collapse-2-2" class="collapse" aria-labelledby="heading-2-2"
                                 data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                        dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et.</p>
+                                    <p>Yes. You may use addons to increase: contributors, storage and data transfer.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card 3 -->
                         <div class="card">
                             <div class="card-header py-4" id="heading-2-3" data-toggle="collapse" role="button"
                                 data-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
-                                <h6 class="mb-0"><i data-feather="folder" class="mr-3"></i>How do I see previous
-                                    orders?
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Will my storage
+                                    allowance expire?
                                 </h6>
                             </div>
                             <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3"
                                 data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                        dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et.</p>
+                                    <p>No, your storage allowance doesn't expire.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header py-4" id="heading-2-3" data-toggle="collapse" role="button"
+                                data-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
+                                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Will my data-trasnfer
+                                    allowance expire?
+                                </h6>
+                            </div>
+                            <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3"
+                                data-parent="#accordion-2">
+                                <div class="card-body">
+                                    <p>Yes, your data-transfer allowance is reset at the begining of your billing cycle.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -588,40 +481,39 @@
             <div class="container pt-4">
                 <hr class="divider divider-fade divider-dark my-5">
                 <div class="row">
-                    <div class="col-lg-10 mb-5 mb-lg-0">
+                    <div class="col-lg-11 mb-5 mb-lg-0">
                         <!-- Theme's logo -->
                         <a href="index.html">
-                            <img alt="Image placeholder" src="img/brand/light.svg" id="footer-logo">
+                            <img alt="Xtages Logo" src="img/logo_white.svg" id="footer-logo" height="37" />
                         </a>
                         <p class="mt-4 text-sm opacity-8 pr-lg-4">
-                            Webpixels attempts to bring the best development
-                            experience to designers and developers by offering the tools needed for having a quick
-                            and
-                            solid start in most web projects.
+                            Are you ready to supercharge your software workflow?
                         </p>
                         <!-- Social -->
                         <ul class="nav mt-4">
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank"
-                                    rel="noopener">
+                                <a class="nav-link pl-0" href="https://www.linkedin.com/company/xtages" target="_blank"
+                                    rel="noopener" title="LinkedIn">
                                     <i data-feather="linkedin"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/webpixels" target="_blank" rel="noopener">
+                                <a class="nav-link" href="https://www.facebook.com/xtages" target="_blank"
+                                    rel="noopener" title="Facebook">
                                     <i data-feather="facebook"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.instagram.com/webps" target="_blank"
-                                    rel="noopener">
-                                    <i data-feather="instagram"></i>
+                                <a class="nav-link" href="https://www.twitter.com/xtages" target="_blank" rel="noopener"
+                                    title="Twitter">
+                                    <i data-feather="twitter"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-1 col-6 col-sm-4 mb-5 mb-lg-0">
                         <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>

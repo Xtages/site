@@ -4,9 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Xtages">
-    <title>Xtages - From zero to startup in no time</title>
+    <title>Xtages - Build, test and deploy your code faster</title>
+    <meta property="title" content="Xtages: Build, test and deploy your code faster">
+    <meta name="description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love">
+    <meta property="og:title" content="Xtages: Build, test and deploy your code faster">
+    <meta property="og:site_name" content="Xtages">
+    <meta property="og:url" content="https://www.xtages.com">
+    <meta property="og:description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.xtages.com/img/infographic_2.png">
+    <meta property="twitter:site" content="@xtages">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.xtages.com">
+    <meta property="twitter:title" content="Xtages: Build, test and deploy your code faster">
+    <meta property="twitter:description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="twitter:image" content="https://www.xtages.com/img/infographic_2.png">
     <!-- Preloader -->
     <style>
         @keyframes hidePreloader {
@@ -49,13 +64,15 @@
         }
     </style>
     <script>
-        window.addEventListener("load", function () {
+        document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
                 document.querySelector('body').classList.add('loaded');
             }, 100);
         });
     </script>
-    <link rel="icon" href="img/brand/favicon.png" type="image/png">
+    <link rel="icon" type="image/svg+xml" href="/img/logo_color_small.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/img/logo_color_small.svg" color="#000000">
     <link rel="stylesheet" href="css/index.min.css" id="stylesheet">
 </head>
 
@@ -66,30 +83,13 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
-        aria-labelledby="modal-cookies" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-            <div class="modal-content bg-dark-dark">
-                <div class="modal-body">
-                    <!-- Text -->
-                    <p class="text-sm text-white mb-3">
-                        We use cookies so that our themes work for you. By using our website, you agree to our use of
-                        cookies.
-                    </p>
-                    <!-- Buttons -->
-                    <a href="terms.html" class="btn btn-sm btn-white">Learn more</a>
-                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header -->
-    <header class="header-transparent" id="header-main">
+    <header id="header-main">
         <!-- Navbar -->
-        <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
+        <nav class="navbar navbar-main navbar-expand-lg navbar-light bg-white" id="navbar-main">
             <div class="container">
                 <!-- Brand -->
-                <img alt="Image placeholder" src="https://www.fillmurray.com/108/37" id="navbar-logo">
+                <img alt="Xtages Logo" src="img/logo_color.svg" id="navbar-logo" height="42">
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
                     aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,58 +131,56 @@
     </header>
 
     <!-- Main content -->
-    <section class="slice slice-lg bg-primary">
-        <div class="container d-flex align-items-center pt-lg-6">
-            <div class="col px-0">
-                <div class="row row-grid align-items-center">
-                    <div class="col-md-8 col-lg-5 mb-5 mb-lg-0">
-                        <!-- Hero Heading -->
-                        <h1 class="display-4 text-white my-4">
-                            Development done right with <strong>Quick</strong>
-                        </h1>
-                        <!-- Tagline -->
-                        <p class="lead text-white opacity-8">
-                            Build a beautiful, modern website with flexible Bootstrap components built from scratch.
-                        </p>
-                        <!-- Hero CTA -->
-                        <div class="mt-5">
-                            <a href="pricing.html" class="btn btn-warning btn-lg btn-icon">
-                                <span class="btn-inner--text font-weight-bolder">Get started</span><span
-                                    class="btn-inner--icon">
-                                    <i data-feather="plus"></i>
-                                </span>
-                            </a>
+    <section class="section-half-rounded pt-6 pb-0 pt-lg-6 pb-lg-5">
+        <!-- Rounded shape -->
+        <div class="jumbotron section-inner right-0 rounded-top-left bg-gradient-primary overflow-hidden col-xl-11">
+        </div>
+        <!-- Container -->
+        <div class="container pt-lg-7 pb-lg-5 position-relative zindex-100">
+            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                <div class="col-md-8 col-lg-5 mb-5 mb-lg-0">
+                    <!-- Heading -->
+                    <h1 class="h1 text-center text-lg-left text-white mb-4">
+                        Build, test and deploy your code <strong>faster</strong>.
+                    </h1>
+                    <!-- Tagline -->
+                    <p class="lead text-white opacity-8">
+                        Leverage software development best practices without having to be an expert in
+                        infrastructure.
+                    </p>
+                    <!-- Hero CTA -->
+                    <div class="mt-5">
+                        <a href="pricing.html" class="btn btn-warning btn-lg btn-icon">
+                            <span class="btn-inner--text font-weight-bolder">Get started</span><span
+                                class="btn-inner--icon">
+                                <i data-feather="plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Devices -->
+                <div
+                    class="position-lg-absolute bottom-lg-4 bottom-xl-0 right-lg-n10 mb-n5 mb-lg-0 mb-xl-n7 col-lg-10 col-xl-10 zindex-100">
+                    <!-- Macbook -->
+                    <!-- Macbook -->
+                    <div class="frame frame-laptop zindex-100 ml-lg-6">
+                        <img src="img/macbook.svg" class="img-fluid" aria-hidden="true" />
+                        <div class="frame-inner">
+                            <img alt="Infographic depicting the software development practices that Xtages can help a company with. Starting with continous integration and deployment, then simple deployments, straightforward monitoring and finally easier troubleshooting."
+                                src="img/infographic_2.svg" class="img-fluid" />
                         </div>
                     </div>
-
-                    <div
-                        class="position-lg-absolute bottom-lg-4 bottom-xl-0 right-lg-n10 mb-n5 mb-lg-0 mb-xl-n7 col-lg-10 col-xl-10 zindex-100">
-                        <!-- Macbook -->
-                        <div class="frame frame-laptop zindex-100 ml-lg-6">
-                            <img alt="Image placeholder" src="img/macbook.svg" class="img-fluid">
-                            <div class="frame-inner">
-                                <img alt="Image placeholder" src="img/infographic_2.png"
-                                    class="img-fluid">
-                            </div>
-                        </div>
-                        <!-- Decorations -->
-                        <div class="w-25 position-absolute top-n5 left-8 left-xl-9">
-                            <img alt="Image placeholder" src="img/dots-square.svg" class="svg-inject img-fluid" />
-                        </div>
-                        <div class="w-25 position-absolute bottom-8 right-n7">
-                            <img alt="Image placeholder" src="img/dots-square.svg" class="svg-inject img-fluid" />
-                        </div>
+                    <!-- Decorations -->
+                    <div class="w-25 position-absolute top-n5 left-8 left-xl-9">
+                        <img alt="Image placeholder" src="img/dots-square.svg" class="svg-inject img-fluid"
+                            aria-hidden="true" />
+                    </div>
+                    <div class="w-25 position-absolute bottom-8 right-n7">
+                        <img alt="Image placeholder" src="img/dots-square.svg" class="svg-inject img-fluid"
+                            aria-hidden="true" />
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- SVG Separator -->
-        <div class="shape-container shape-position-bottom shape-line">
-            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px"
-                viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
-                <polygon points="2560 0 2560 100 0 100"></polygon>
-            </svg>
         </div>
     </section>
 
@@ -193,19 +191,20 @@
                     <div class="row row-grid align-items-center justify-content-between">
                         <div class="col-xl-5 col-lg-6 order-lg-2">
                             <div class="pr-md-4">
-                                <span class="badge badge-warning badge-pill">Tools</span>
-                                <h3 class="h2 mt-4">We build for designers and developers</h3>
+                                <span class="badge badge-warning badge-pill">Integrations</span>
+                                <h3 class="h2 mt-4">Easy integration with the tools devs love</h3>
                                 <p class="lead lh-190 my-4">
-                                    With Quick you get components and examples, including tons of variables that will
-                                    help you customize this theme with ease.
+                                    Use our browser extension to take actions like create a project, run tests and
+                                    deploy
+                                    using a simple and powerful UI right from GitHub.
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <div class="card border-0 shadow-lg">
                                 <figure>
-                                    <img alt="Image placeholder" src="img/project_creation.png"
-                                        class="card-img">
+                                    <img alt="Screenshot of the Xtages integration within GitHub, that enables creating new projects right from the GitHub UI."
+                                        src="img/project_creation.png" class="card-img" />
                                 </figure>
                             </div>
                         </div>
@@ -218,8 +217,9 @@
                         <div class="col-xl-5 col-lg-6">
                             <div class="pr-md-4">
                                 <span class="badge badge-success badge-pill">Features</span>
-                                <h5 class="mt-4 lh-190">With Quick you get components and examples, including tons of
-                                    variables that will help you customize this theme with ease.</h5>
+                                <h5 class="mt-4 lh-190">Trigger and visualize your latest tests and builds from your
+                                    GitHub UI. Promote and rollback code with a click without further
+                                    configuration.</h5>
                                 <div class="mt-5">
                                     <ul class="list-unstyled">
                                         <li class="py-2">
@@ -230,7 +230,8 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <span class="text-success mb-0">Perfect for modern startups</span>
+                                                    <span class="text-success mb-0">Preview your changes in staging and
+                                                        then promote it to production.</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -242,8 +243,8 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <span class="text-success mb-0">Fully customizable and
-                                                        scalable</span>
+                                                    <span class="text-success mb-0">Rollback your changes with one
+                                                        click.</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -254,8 +255,8 @@
                         <div class="col-lg-6">
                             <div class="card border-0 shadow-lg">
                                 <figure>
-                                    <img alt="Image placeholder" src="img/in_repo_ci.png"
-                                        class="card-img">
+                                    <img alt="Screenshot of the Xtages integration within GitHub, showing the continous integration runs for a specific repo from the GitHub UI."
+                                        src="img/in_repo_ci.png" class="card-img">
                                 </figure>
                             </div>
                         </div>
@@ -267,19 +268,20 @@
                     <div class="row row-grid align-items-center justify-content-between">
                         <div class="col-xl-5 col-lg-6 order-lg-2">
                             <div class="pr-md-4">
-                                <span class="badge badge-primary badge-pill">Technology</span>
-                                <h3 class="h2 mt-4">We use the latest technologies on the market</h3>
+                                <span class="badge badge-primary badge-pill">Automate</span>
+                                <h3 class="h2 mt-4">Create more complex automation in no time.</h3>
                                 <p class="lead my-4 lh-190">
-                                    With Quick you get components and examples, including tons of variables that will
-                                    help you customize this theme with ease.
+                                    Our fully capable and scalable CI/CD allows you to create complex use cases for
+                                    automation by abstracting the infrastructure and allowing teams to focus on where
+                                    they are productive.
                                 </p>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 order-lg-1">
                             <div class="card border-0 shadow-lg">
                                 <figure>
-                                    <img alt="Image placeholder" src="img/ci_runs.png"
-                                        class="card-img">
+                                    <img alt="Screenshot of Xtages showing a detailed view of the continous integrations runs for a project."
+                                        src="img/ci_runs.png" class="card-img">
                                 </figure>
                             </div>
                         </div>
@@ -292,9 +294,11 @@
                     <div class="row row-grid align-items-center justify-content-between">
                         <div class="col-xl-5 col-lg-6">
                             <div class="pr-md-4">
-                                <span class="badge badge-success badge-pill">Features</span>
-                                <h5 class="mt-4 lh-190">With Quick you get components and examples, including tons of
-                                    variables that will help you customize this theme with ease.</h5>
+                                <span class="badge badge-success badge-pill">Monitor</span>
+                                <h5 class="mt-4 lh-190">Monitor your application without having to set up any dashboard.
+                                    Our <abbr title="out of the box">OOTB</abbr> dashboards give you the ability to
+                                    check the most important metrics for your
+                                    app.</h5>
                                 <div class="mt-5">
                                     <ul class="list-unstyled">
                                         <li class="py-2">
@@ -305,7 +309,8 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <span class="text-success mb-0">Perfect for modern startups</span>
+                                                    <span class="text-success mb-0">Vetted dashboard used by the most
+                                                        sophisticated companies.</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -317,8 +322,7 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <span class="text-success mb-0">Fully customizable and
-                                                        scalable</span>
+                                                    <span class="text-success mb-0">Zero infrastructure required.</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -329,8 +333,8 @@
                         <div class="col-lg-6">
                             <div class="card border-0 shadow-lg">
                                 <figure>
-                                    <img alt="Image placeholder" src="img/dashboard.png"
-                                        class="card-img">
+                                    <img alt="Screenshot of Xtages showing a dashboard where it's possible to check how a service is behaving."
+                                        src="img/dashboard.png" class="card-img">
                                 </figure>
                             </div>
                         </div>
@@ -341,14 +345,15 @@
                 <div class="card-body px-5">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h4 class="text-white">Infinite solutions with only one template</h4>
+                            <h4 class="text-white">Develop your app with zero infrastructure</h4>
                             <p class="text-white">
-                                With an intuitive markup, powerful and lightning fast build tools, Quick has everything
-                                you need to turn your ideas into incredible products.
+                                Reduce the friction to have best in class software development practices with zero
+                                infrastructure. Level up your teams by giving them vetted solutions to
+                                develop your product faster.
                             </p>
                         </div>
                         <div class="col-12 col-md-4 text-right">
-                            <a href="#" class="btn btn-white btn-icon">
+                            <a href="pricing.html" class="btn btn-white btn-icon">
                                 <span class="btn-inner--text">Learn more</span>
                                 <span class="btn-inner--icon">
                                     <i data-feather="arrow-right"></i>
@@ -366,9 +371,9 @@
         <div class="container">
             <div class="row mb-6">
                 <div class="col-md-6">
-                    <span class="badge badge-primary badge-pill">Awards</span>
-                    <h5 class="h5 lh-180 mt-4 mb-xl-6">Quick is a premium HTML theme that includes adaptable layouts for
-                        various industries and free monthly updates.</h5>
+                    <span class="badge badge-primary badge-pill">Supported technologies</span>
+                    <h5 class="h5 lh-180 mt-4 mb-xl-6">Xtages helps you keep up with best practices that are use by
+                        tech giants without worrying about difficult to setup and manage internal infrastructure.</h5>
                 </div>
             </div>
         </div>
@@ -377,83 +382,66 @@
                 <div class="col-xl-2 col-lg-4 col-sm-6">
                     <div class="card hover-shadow-lg hover-translate-y-n3">
                         <div class="pt-5 h-100 w-50 mx-auto">
-                            <img alt="Image placeholder" src="img/clients/svg/airbnb.svg" class="img-fluid" />
+                            <img alt="Node.js Logo" src="img/nodejs.svg" class="img-fluid" />
                         </div>
                         <div class="card-body pb-5 text-center">
-                            <!-- Rating -->
-                            <span class="static-rating d-block">
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star"></i>
-                            </span>
                             <!-- Info -->
-                            <h5 class="mt-4 mb-1">4.95 out of 5 stars</h5>
-                            <p class="text-muted text-sm mb-0">
-                                from 23 reviews
-                            </p>
+                            <h4 class="h5 mt-4 mb-1">Node.js</h5>
+                                <p class="px-2 mb-4">
+                                    Create projects, tests and deploy pipelines.
+                                </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-sm-6">
                     <div class="card hover-shadow-lg hover-translate-y-n3 mt-xl-n6">
                         <div class="pt-5 h-100 w-50 mx-auto">
-                            <img alt="Image placeholder" src="img/clients/svg/amazon.svg" class="img-fluid" />
+                            <img alt="AWS Logo" src="img/aws.svg" class="img-fluid" />
                         </div>
-                        <div class="card-body pb-5 text-center">
-                            <p class="px-2 mb-4">
-                                They build modern looking websites easily using Quick.
-                            </p>
-                            <a href="#" class="link link-underline-dark">Learn more</a>
+                        <div class="card-body pb-3 text-center">
+                            <h4 class="h5 mt-4 mb-1">AWS</h5>
+                                <p class="px-2 mb-4">
+                                    Deploy your app to ECS or EKS
+                                </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-sm-6">
-                    <div class="card hover-shadow-lg hover-translate-y-n3">
+                    <div class="card hover-shadow-lg hover-translate-y-n3" disabled>
                         <div class="pt-5 h-100 w-50 mx-auto">
-                            <img alt="Image placeholder" src="img/clients/svg/slack.svg" class="img-fluid" />
+                            <img alt="Ruby on Rails Logo" src="img/rubyonrails.svg" class="img-fluid" />
                         </div>
                         <div class="card-body text-center pb-5">
-                            <p class="px-2 mb-4">
-                                They build modern looking websites easily using Quick.
-                            </p>
-                            <a href="#" class="link link-underline-dark">Learn more</a>
+                            <h4 class="h5 mt-4 mb-1">Ruby on Rails</h5>
+                                <p class="px-2 mb-4 text-dark">
+                                    Coming soon
+                                </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-sm-6">
-                    <div class="card hover-shadow-lg hover-translate-y-n3 mt-xl-n6">
+                    <div class="card hover-shadow-lg hover-translate-y-n3 mt-xl-n6" disabled>
                         <div class="pt-5 h-100 w-50 mx-auto">
-                            <img alt="Image placeholder" src="img/clients/svg/spotify.svg" class="img-fluid" />
+                            <img alt="Spring Logo" src="img/spring.svg" class="img-fluid" />
                         </div>
                         <div class="card-body pb-5 text-center">
-                            <!-- Rating -->
-                            <span class="static-rating d-block">
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star voted"></i>
-                                <i data-feather="star" class="star"></i>
-                            </span>
-                            <!-- Info -->
-                            <h5 class="mt-4 mb-1">4.95 out of 5 stars</h5>
-                            <p class="text-muted text-sm mb-0">
-                                from 23 reviews
-                            </p>
+                            <h4 class="h5 mt-4 mb-1">Spring</h5>
+                                <p class="px-2 mb-4 text-dark">
+                                    Coming soon
+                                </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-sm-6">
-                    <div class="card hover-shadow-lg hover-translate-y-n3">
+                    <div class="card hover-shadow-lg hover-translate-y-n3" disabled>
                         <div class="pt-5 h-100 w-50 mx-auto">
-                            <img alt="Image placeholder" src="img/clients/svg/paypal.svg" class="img-fluid" />
+                            <img alt="Google Cloud Computing Logo" src="img/gcp.svg" class="img-fluid" />
                         </div>
-                        <div class="card-body text-center pb-5">
-                            <p class="px-2 mb-4">
-                                They build modern looking websites easily using Quick.
-                            </p>
-                            <a href="#" class="link link-underline-dark">Learn more</a>
+                        <div class="card-body text-center pb-3">
+                            <h4 class="h5 mt-4 mb-1">Google Cloud Computing</h5>
+                                <p class="px-2 mb-2 text-dark">
+                                    Coming soon
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -485,9 +473,11 @@
                     <div class="col-lg-12">
                         <div class="row align-items-center">
                             <div class="col-lg-7">
-                                <h3 class="text-secondary mb-2">Brilliant solutions for your ideas</h3>
+                                <h3 class="text-secondary mb-2">Adopt best practices for your teams and focus on your
+                                    core problems</h3>
                                 <p class="lead mb-0 text-white opacity-8">
-                                    Build modern looking websites fast and easy using Quick.
+                                    Using Xtages you can focus on your core features without having to setup and
+                                    maintaing infrastructure for your development teams.
                                 </p>
                             </div>
                             <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
@@ -500,36 +490,33 @@
                 </div>
                 <hr class="divider divider-fade divider-dark my-5">
                 <div class="row">
-                    <div class="col-lg-10 mb-5 mb-lg-0">
+                    <div class="col-lg-11 mb-5 mb-lg-0">
                         <div class="col-lg-9">
                             <!-- Theme's logo -->
                             <a href="index.html">
-                                <img alt="Image placeholder" src="img/brand/light.svg" id="footer-logo">
+                                <img alt="Xtages Logo" src="img/logo_white.svg" id="footer-logo" height="37" />
                             </a>
                             <p class="mt-4 text-sm opacity-8 pr-lg-4">
-                                Webpixels attempts to bring the best development
-                                experience to designers and developers by offering the tools needed for having a quick
-                                and
-                                solid start in most web projects.
+                                Are you ready to supercharge your software workflow?
                             </p>
                             <!-- Social -->
                             <ul class="nav mt-4">
                                 <li class="nav-item">
-                                    <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank"
-                                        rel="noopener">
+                                    <a class="nav-link pl-0" href="https://www.linkedin.com/company/xtages"
+                                        target="_blank" rel="noopener" title="LinkedIn">
                                         <i data-feather="linkedin"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://github.com/webpixels" target="_blank"
-                                        rel="noopener">
+                                    <a class="nav-link" href="https://www.facebook.com/xtages" target="_blank"
+                                        rel="noopener" title="Facebook">
                                         <i data-feather="facebook"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://www.instagram.com/webps" target="_blank"
-                                        rel="noopener">
-                                        <i data-feather="instagram"></i>
+                                    <a class="nav-link" href="https://www.twitter.com/xtages" target="_blank"
+                                        rel="noopener" title="Twitter">
+                                        <i data-feather="twitter"></i>
                                     </a>
                                 </li>
                             </ul>

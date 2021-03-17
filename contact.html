@@ -4,9 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Xtages">
-    <title>Xtages - From zero to startup in no time</title>
+    <title>Xtages - Build, test and deploy your code faster</title>
+    <meta property="title" content="Xtages: Build, test and deploy your code faster">
+    <meta name="description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="og:title" content="Xtages: Build, test and deploy your code faster">
+    <meta property="og:site_name" content="Xtages">
+    <meta property="og:url" content="https://www.xtages.com">
+    <meta property="og:description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://www.xtages.com/img/infographic_2.png">
+    <meta property="twitter:site" content="@xtages">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.xtages.com">
+    <meta property="twitter:title" content="Xtages: Build, test and deploy your code faster">
+    <meta property="twitter:description"
+        content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
+    <meta property="twitter:image" content="https://www.xtages.com/img/infographic_2.png">
     <!-- Preloader -->
     <style>
         @keyframes hidePreloader {
@@ -49,13 +64,15 @@
         }
     </style>
     <script>
-        window.addEventListener("load", function () {
+        document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
                 document.querySelector('body').classList.add('loaded');
             }, 100);
         });
     </script>
-    <link rel="icon" href="img/brand/favicon.png" type="image/png">
+    <link rel="icon" type="image/svg+xml" href="/img/logo_color_small.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="mask-icon" href="/img/logo_color_small.svg" color="#000000">
     <link rel="stylesheet" href="css/index.min.css" id="stylesheet">
 </head>
 
@@ -66,31 +83,14 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
-        aria-labelledby="modal-cookies" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-            <div class="modal-content bg-dark-dark">
-                <div class="modal-body">
-                    <!-- Text -->
-                    <p class="text-sm text-white mb-3">
-                        We use cookies so that our themes work for you. By using our website, you agree to our use of
-                        cookies.
-                    </p>
-                    <!-- Buttons -->
-                    <a href="../../pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
-                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header -->
-    <header class="" id="header-main">
+    <header id="header-main">
         <!-- Navbar -->
         <nav class="navbar navbar-main navbar-expand-lg navbar-light" id="navbar-main">
             <div class="container">
                 <!-- Brand -->
-                <a class="navbar-brand" href="../../index.html">
-                    <img alt="Image placeholder" src="../../assets/img/brand/dark.svg" id="navbar-logo">
+                <a href="../../index.html">
+                    <img alt="Xtages Logo" src="img/logo_color.svg" height="42">
                 </a>
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
@@ -109,6 +109,11 @@
                     </div>
                     <!-- Main navigation -->
                     <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+                        <li class="nav-item nav-item-spaced d-none d-lg-block">
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
                             <a class="nav-link" href="pricing.html">
                                 Pricing
@@ -132,18 +137,18 @@
                     <div class="col-lg-6">
                         <!-- Heading -->
                         <h1 class="h1 text-white text-center text-lg-left my-4">
-                            Have a project <strong>in mind?</strong>
+                            Have questions about our <strong>services</strong>?
                         </h1>
                         <!-- Text -->
                         <p class="lead text-white text-center text-lg-left opacity-8">
-                            Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+                            Send us a line using the form to the right...
                         </p>
                     </div>
                     <div class="col-lg-6">
                         <!-- Form -->
                         <div id="contact-thanks" class="text-center alert alert-success" role="alert"
                             style="display: none;">Thank you for contacting us. We'll be in touch shortly.</div>
-                        <form 
+                        <form
                             action="https://docs.google.com/forms/d/e/1FAIpQLSfQHOh4OGZOfMapgAH3yTfKqzbHiM6fc1sqpDLVZOQ_DKgTfA/formResponse"
                             onsubmit="return window.submitContactForm(this);">
                             <div class="form-group">
@@ -191,9 +196,9 @@
         <div class="container position-relative zindex-100">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-6 text-center">
-                    <h3>Contact us</h3>
-                    <p class="lh-190">If there's something we can help you with, jut let us know. We'll be more than
-                        happy to offer you our help</p>
+                    <h3>Or</h3>
+                    <p class="lh-190">Schedule a session with us! We'd love to talk to you and better understand your
+                        problems.</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -221,9 +226,11 @@
                     <div class="col-lg-12">
                         <div class="row align-items-center">
                             <div class="col-lg-7">
-                                <h3 class="text-secondary mb-2">Brilliant solutions for your ideas</h3>
+                                <h3 class="text-secondary mb-2">Adopt best practices for your teams and focus on your
+                                    core problems</h3>
                                 <p class="lead mb-0 text-white opacity-8">
-                                    Build modern looking websites fast and easy using Quick.
+                                    Using Xtages you can focus on your core features without having to setup and
+                                    maintaing infrastructure for your development teams.
                                 </p>
                             </div>
                             <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
@@ -236,40 +243,43 @@
                 </div>
                 <hr class="divider divider-fade divider-dark my-5">
                 <div class="row">
-                    <div class="col-lg-10 mb-5 mb-lg-0">
+                    <div class="col-lg-11 mb-5 mb-lg-0">
                         <div class="col-lg-9">
                             <!-- Theme's logo -->
                             <a href="index.html">
-                                <img alt="Image placeholder" src="img/brand/light.svg" id="footer-logo">
+                                <img alt="Xtages Logo" src="img/logo_white.svg" id="footer-logo" height="37" />
                             </a>
                             <p class="mt-4 text-sm opacity-8 pr-lg-4">
-                                Webpixels attempts to bring the best development
-                                experience to designers and developers by offering the tools needed for having a quick
-                                and
-                                solid start in most web projects.
+                                Are you ready to supercharge your software workflow?
                             </p>
                             <!-- Social -->
                             <ul class="nav mt-4">
                                 <li class="nav-item">
-                                    <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank"
-                                        rel="noopener">
+                                    <a class="nav-link pl-0" href="https://www.linkedin.com/company/xtages"
+                                        target="_blank" rel="noopener" title="LinkedIn">
                                         <i data-feather="linkedin"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://github.com/webpixels" target="_blank"
-                                        rel="noopener">
+                                    <a class="nav-link" href="https://www.facebook.com/xtages" target="_blank"
+                                        rel="noopener" title="Facebook">
                                         <i data-feather="facebook"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://www.instagram.com/webps" target="_blank"
-                                        rel="noopener">
-                                        <i data-feather="instagram"></i>
+                                    <a class="nav-link" href="https://www.twitter.com/xtages" target="_blank" rel="noopener"
+                                        title="Twitter">
+                                        <i data-feather="twitter"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-lg-1 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                        </ul>
                     </div>
                 </div>
                 <hr class="divider divider-fade divider-dark my-4">
