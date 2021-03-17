@@ -53,7 +53,11 @@ function compileScss() {
 		.pipe(cleanCss())
 		.pipe(purgecss({
 			content: [paths.dist.base + '/*.html'],
-			safelist: ['show'],
+			safelist: {
+				standard: ['show'],
+			    deep: [/lb-*/, /lightbox*/]
+			}
+			// safelist: ['show', 'lb-*', 'ligthbox'],
 		}))
 		.pipe(rename({
 			suffix: '.min'

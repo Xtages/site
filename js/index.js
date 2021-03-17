@@ -3,36 +3,37 @@ const feather = require('feather-icons');
 window.jQuery = window.$ = require('jquery');
 require('bootstrap/js/dist/collapse');
 require('bootstrap/js/dist/modal');
+const lightbox = require('lightbox2');
 
 feather.replace({
     'width': '1em',
     'height': '1em',
 });
 
-function maybeShowCookiesModal() {
-    const $modal = $("#modal-cookies");
+// function maybeShowCookiesModal() {
+//     const $modal = $("#modal-cookies");
 
-    function show($this) {
-        const cookies = localStorage.getItem('modal_cookies');
+//     function show($this) {
+//         const cookies = localStorage.getItem('modal_cookies');
 
-        if (!cookies) {
-            $this.modal('show')
-        }
-    }
+//         if (!cookies) {
+//             $this.modal('show')
+//         }
+//     }
 
-    function hide($this) {
-        $this.modal('hide')
-    }
+//     function hide($this) {
+//         $this.modal('hide')
+//     }
 
-    if ($modal.length) {
-        show($modal);
+//     if ($modal.length) {
+//         show($modal);
 
-        $modal.on('hidden.bs.modal', function (e) {
-            localStorage.setItem('modal_cookies', 1);
-        })
-    }
-}
-maybeShowCookiesModal();
+//         $modal.on('hidden.bs.modal', function (e) {
+//             localStorage.setItem('modal_cookies', 1);
+//         })
+//     }
+// }
+// maybeShowCookiesModal();
 
 function maybeDoGtag(method, event, args_map) {
     if (window['gtag']) {
@@ -119,4 +120,10 @@ function maybeDoGtag(method, event, args_map) {
         }
         return false;
     };
+})();
+
+(function setGallery() {
+    lightbox.option({
+        'resizeDuration': 300,
+    });
 })();
