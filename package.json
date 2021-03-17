@@ -11,6 +11,7 @@
     "scripts": {
         "build": "gulp build",
         "dev": "gulp dev",
+        "devBlog": "gulp serveBlog",
         "clean": "gulp clean"
     },
     "devDependencies": {
@@ -31,6 +32,7 @@
         "gulp-sass": "^4.1.0",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-uglify": "^3.0.2",
+        "postcss-cli": "^8.3.1",
         "postcss-flexbugs-fixes": "^4.2.1",
         "sass": "^1.27.0",
         "vinyl-buffer": "^1.0.1",

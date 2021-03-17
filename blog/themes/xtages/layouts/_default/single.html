@@ -1,0 +1,84 @@
+{{ define "header" }}
+  {{ partial "post_header.html" . }}
+{{ end }}
+{{ define "main" }}
+<section class="slice slice-lg pt-17 pb-0 bg-cover bg-size--cover"
+    style="background-image: url({{ .Permalink }}/{{ .Params.featured_image }})">
+    <!-- Container -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-10">
+                <div class="card mb-n7 position-relative zindex-100">
+                    <div class="card-body p-md-5">
+                        <div class="text-center">
+                            <!-- Badge -->
+                            {{ range .Params.tags }}
+                                <span class="badge badge-success badge-pill">{{- . -}}</span>
+                            {{ end }}
+                            <!-- Heading -->
+                            <h1 class="h2 lh-150 mt-3 mb-0">{{ .Page.Title }}</h1>
+                        </div>
+                        <!-- Share -->
+                        <div class="row align-items-center mt-5 pt-5 delimiter-top">
+                            {{ $author := index $.Site.Params.authors .Params.author }}
+                            <div class="col mb-3 mb-lg-0">
+                                <div class="media align-items-center">
+                                    <div>
+                                        <span class="avatar bg-primary rounded-circle mr-3">{{ $author.initials }}</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="d-block h6 mb-0">{{ $author.name }}</span>
+                                        <span class="text-sm text-muted">Published on {{ .Params.Date.Format "January 2, 2006" }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item pr-4">
+                                        {{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s" .Permalink .Params.Title }}
+                                        <a href="{{ $linkedin_href }}" title="share on LinkedIn" target="_blank">
+                                            <i data-feather="linkedin" class="mr-1 text-muted"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item pr-4">
+                                        {{ $facebook_href := printf "https://www.facebook.com/sharer/sharer.php?u=%s" .Permalink }}
+                                        <a href="{{ $facebook_href }}" title="share on Facebook" target="_blank">
+                                            <i data-feather="facebook" class="mr-1 text-muted"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item pr-4">
+                                        {{ $twitter_href := printf "https://twitter.com/share?url=%s&text=%s&via=%s" .Permalink .Page.Title "https://twitter.com/xtages" }}
+                                        <a href="{{ $twitter_href }}" title="share on Twitter" target="_blank">
+                                            <i data-feather="twitter" class="mr-1 text-muted"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG separator -->
+    <div class="shape-container shape-position-bottom">
+        <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100"
+            style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+    </div>
+</section>
+<section class="slice slice-lg pt-10 pb-5">
+    <!-- Container -->
+    <div class="container pb-6">
+        <div class="row row-grid align-items-center">
+            <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1">
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
