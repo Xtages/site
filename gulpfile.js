@@ -135,6 +135,8 @@ function browserSyncInit(openTab) {
 			},
 			port: 3000,
 			open: openTab ? 'local' : false,
+			notify: false,
+			ghostMode: false,
 		});
 		done();
 	}
