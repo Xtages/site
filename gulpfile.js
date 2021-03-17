@@ -39,7 +39,7 @@ var paths = {
 		html: './*.html',
 		css: './css/**/*.scss',
 		js: './js/**/*.js',
-		img: './img/**/*.+(png|jpg|gif|svg)',
+		img: './img/**/*.+(png|jpg|gif|svg|ico)',
 	}
 }
 

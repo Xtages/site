@@ -27,6 +27,12 @@ abbr {
     background: url(../img/close.png) top right no-repeat !important;
 }
 
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev,
+.lb-cancel {
+  background: none !important;
+}
+
 .calendly {
     border: none;
     height: 700px;
