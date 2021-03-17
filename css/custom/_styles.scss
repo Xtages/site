@@ -7,6 +7,14 @@ abbr {
   text-decoration: none !important;
 }
 
+.card-pricing .subtitle {
+  font-size: 75%;
+}
+
+.card-pricing {
+  min-height: 450px;
+}
+
 .card[disabled]::after {
     content: '';
     display: block;
