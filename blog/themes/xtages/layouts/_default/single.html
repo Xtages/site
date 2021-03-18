@@ -3,7 +3,7 @@
 {{ end }}
 {{ define "main" }}
 <section class="slice slice-lg pt-17 pb-0 bg-cover bg-size--cover"
-    style="background-image: url({{ .Permalink }}/{{ .Params.featured_image }})">
+    style="background-image: url({{ .RelPermalink }}{{ .Params.featured_image }})">
     <!-- Container -->
     <div class="container">
         <div class="row justify-content-center">
