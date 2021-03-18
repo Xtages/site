@@ -1,4 +1,4 @@
-baseURL = "https://www.xtages.org/blog"
+baseURL = "https://www.xtages.com/blog"
 languageCode = "en-us"
 title = "Xtages Blog - Build, test and deploy your code faster"
 theme = "xtages"
