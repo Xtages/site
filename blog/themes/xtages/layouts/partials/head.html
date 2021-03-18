@@ -50,9 +50,9 @@
         }, 100);
     });
 </script>
-<link rel="icon" type="image/svg+xml" href="{{ "img/logo_color_small.svg" | absURL }}">
-<link rel="alternate icon" href="{{ "img/logo_color_small.ico" | absURL }}">
-<link rel="mask-icon" href="{{ "img/logo_color_small.svg" | absURL }}" color="#000000">
+<link rel="icon" type="image/svg+xml" href="{{ "img/logo_color_small.svg" | relURL }}">
+<link rel="alternate icon" href="{{ "img/logo_color_small.ico" | relURL }}">
+<link rel="mask-icon" href="{{ "img/logo_color_small.svg" | relURL }}" color="#000000">
 {{ with resources.Get "css/blog.scss" }}
   {{ $options := (dict "targetPath" "css/blog.css" "enableSourceMap" true "precision" 6 "includePaths" (slice
 "node_modules")) }}
