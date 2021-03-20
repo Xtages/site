@@ -2,3 +2,7 @@
 @import "../../../../../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/components/avatars/avatar";
 @import "../../../../../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/components/masks/mask";
 @import "../../../../../vendor/quick-website-ui-kit-v1.1.1/src/resources/scss/core/components/media-objects/media";
+
+figure.in-content img {
+    width: 100%;
+}

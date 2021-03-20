@@ -1,6 +1,6 @@
 ---
 title: "More tooling More problems"
-date: 2021-03-17T09:25:38-07:00
+date: 2021-03-19T09:25:38-07:00
 author: mdellamerlina 
 tags: ['tools', 'software', 'SDLC', 'best practices']
 featured_image: feature.jpg
@@ -11,7 +11,7 @@ images: ['feature.jpg', 'tools.jpg']
 The modern software development workflow is currently stuck in a local maxima where developers are forced to use a myriad of tools and SaaS services on a daily basis in order to do their jobs. These SaaS companies, smartly, try to be best-of-breed of their own niches but time and time again ignore how well they fit into the landscape of tools that a developer must master in order to accomplish meaningful work.
 
 On a daily basis a developer might have to interact with many services the image below shows.
-{{< figure src="tools.png" alt="A diagram of many of the tools a Software Engineer might have to use on a given day" class="d-flex justify-content-center">}}
+{{< figure src="tools.png" alt="A diagram of many of the tools a Software Engineer might have to use on a given day" class="d-flex justify-content-center in-content">}}
 
 Those are a lot of tools each requiring a fair amount of time to ramp up in order to get familiar with them.
 
