@@ -111,7 +111,7 @@ function maybeDoGtag(method, event, argsMap) {
                     }
                 }
                 maybeDoGtag('event', 'contact_us', {
-                    'method': 'form',
+                    'method': this.___planName || 'form',
                     'event_callback': doSubmit
                 });
             } else {
@@ -130,6 +130,7 @@ function maybeDoGtag(method, event, argsMap) {
 
 (function registerCapturePurchase(anchor, planName) {
     window['capturePurchase'] = function capturePurchase(anchor, planName) {
+        window.___planName = planName;
         maybeDoGtag('event', 'select_content', {
             'content_type': 'product',
             'items': [{
