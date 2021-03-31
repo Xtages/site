@@ -4,7 +4,7 @@ date: 2021-03-19T09:25:38-07:00
 author: mdellamerlina 
 tags: ['tools', 'software', 'SDLC', 'best practices']
 featured_image: feature.jpg
-featured_image_alt_text: Forge
+featured_image_alt_text: Sylvain Roze, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Forge_Emile.jpg
 images: ['feature.jpg', 'tools.jpg']
 ---
 
