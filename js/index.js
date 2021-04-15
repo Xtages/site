@@ -36,7 +36,7 @@ feather.replace({
 // maybeShowCookiesModal();
 
 function maybeDoGtag(method, event, argsMap) {
-    if (window['gtag']) {
+    if (window['gtag'] && window['gaIsLoaded']) {
         window['gtag'](method, event, argsMap);
     } else if (argsMap['event_callback']) {
         argsMap['event_callback']();
@@ -71,7 +71,7 @@ function maybeDoGtag(method, event, argsMap) {
                     }
                 }
                 maybeDoGtag('event', 'sign_up', {
-                    'method': 'form',
+                    'method': this.___planName || 'form',
                     'event_callback': doSubmit
                 });
             } else {

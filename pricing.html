@@ -76,8 +76,12 @@
     <link rel="stylesheet" href="css/index.min.css" id="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G22B3G6ZJG"></script>
     <script>
+        window.gaIsLoaded = false;
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
+        gtag(function() {
+            window.gaIsLoaded = true;
+        });
         gtag('js', new Date());
         gtag('config', 'UA-190737020-1');
         gtag('event', 'screen_view', {
