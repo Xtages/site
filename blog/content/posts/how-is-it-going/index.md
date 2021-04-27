@@ -4,7 +4,7 @@ date: 2021-04-26T15:33:08-07:00
 author: czuniga
 tags: ['How is it going', 'HIIG']
 featured_image: feature.png
-featured_image_alt_text: Hello my name is tag
+featured_image_alt_text: Dave Braunschweig, CC BY-SA 4.0, via Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Flowgorithm_Hello_World_with_Comments.svg
 images: ['feature.jpg']
 ---
 
