@@ -11,3 +11,13 @@ figure.in-content img {
 .lb-data .lb-close {
     background: none !important;
 }
+
+blockquote {
+    background-color: $gray-200;
+    padding: 20px 20px 5px 20px;
+    font-style: italic;
+}
+
+blockquote h2 {
+    font-size: $h5-font-size;
+}
