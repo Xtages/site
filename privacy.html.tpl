@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Xtages - Build, test and deploy your code faster</title>
+    <title>Xtages - Privacy Policy</title>
     <meta property="title" content="Xtages: Build, test and deploy your code faster">
     <meta name="description"
         content="Build, test and deploy your code faster. Leverage software development best practices without having to be an expert in infrastructure. Easy integration with the tools devs love.">
@@ -79,7 +79,7 @@
         window.gaIsLoaded = false;
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag(function() {
+        gtag(function () {
             window.gaIsLoaded = true;
         });
         gtag('js', new Date());
@@ -122,7 +122,7 @@
                         </button>
                     </div>
                     <!-- Main navigation -->
-                    <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+                    <ul class="navbar-nav ml-lg-auto">
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
                             <a class="nav-link" href="/">
                                 Home
@@ -134,8 +134,8 @@
                             </a>
                         </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class="nav-link" href="pricing.html">
-                                Pricing
+                            <a class="nav-link" href="contact.html">
+                                Contact
                             </a>
                         </li>
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
@@ -149,7 +149,7 @@
                         <a href="overview.html" class="btn btn-sm btn-white btn-icon ml-3">Overview</a>
                     </div>
                     <div class="d-lg-none px-4 text-center">
-                        <a href="pricing.html" class="btn btn-sm btn-white btn-icon ml-3">Pricing</a>
+                        <a href="contact.html" class="btn btn-sm btn-white btn-icon ml-3">Contact</a>
                     </div>
                     <div class="d-lg-none px-4 text-center">
                         <a href="/blog" class="btn btn-sm btn-white btn-icon ml-3">Blog</a>
@@ -159,83 +159,38 @@
         </nav>
     </header>
     <!-- Main content -->
-    <section class="slice py-6 pt-lg-7 pb-lg-8 bg-gradient-primary">
+    <section>
         <!-- Container -->
-        <div class="container d-flex align-items-center text-center text-lg-left">
+        <div class="container d-flex align-items-center text-center text-lg-left py-5 py-lg-6 border-bottom">
             <div class="col px-0">
-                <div class="row row-grid align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Heading -->
-                        <h1 class="h1 text-white text-center text-lg-left my-4">
-                            Have questions about our <strong>services</strong>?
-                        </h1>
-                        <!-- Text -->
-                        <p class="lead text-white text-center text-lg-left opacity-8">
-                            Send us a line using the form to the right...
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- Form -->
-                        <div id="contact-thanks" class="text-center alert alert-success" role="alert"
-                            style="display: none;">Thank you for contacting us. We'll be in touch shortly.</div>
-                        <form
-                            action="https://docs.google.com/forms/d/e/1FAIpQLSfQHOh4OGZOfMapgAH3yTfKqzbHiM6fc1sqpDLVZOQ_DKgTfA/formResponse"
-                            onsubmit="return window.submitContactForm(this);">
-                            <div class="form-group">
-                                <input class="form-control form-control-lg" type="text" placeholder="Your name"
-                                    name="entry.598134106">
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control form-control-lg" type="email" placeholder="email@example.com"
-                                    required name="entry.1699378977">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control form-control-lg" data-toggle="autosize"
-                                    placeholder="How can we help?" rows="3" required name="entry.628531844"></textarea>
-                            </div>
-                            <input aria-hidden="true" name="___honey___pot" style="display: none" />
-                            <!-- bot protection -->
-
-                            <small class="form-text text-white">
-                                We respect your privacy and will never sell your information.
-                            </small>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-block btn-lg btn-warning mt-4">
-                                    <span class="btn-inner--icon">
-                                        <i data-feather="edit-2"></i>
-                                    </span>
-                                    <span class="btn-inner--text">Drop us a line</span>
-                                </button>
-                            </div>
-                        </form>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <!-- Title -->
+                        <h1 class="mb-2">Privacy Policy</h1>
+                        <h6 class="font-weight-light text-muted">Last updated: July 29th, 2021</h6>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- SVG separator -->
-        <div class="shape-container shape-line shape-position-bottom">
-            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px"
-                viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
-                <polygon points="2560 0 2560 100 0 100"></polygon>
-            </svg>
         </div>
     </section>
 
-    <section class="slice slice-lg" id="sct-form-contact">
-        <div class="container position-relative zindex-100">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-6 text-center">
-                    <h3>Or</h3>
-                    <p class="lh-190">Schedule a session with us! We'd love to talk to you and better understand your
-                        problems.</p>
+    <section class="slice">
+        <div class="container">
+            <div class="row row-grid justify-content-between">
+                <div class="col-lg-3">
+                    <div data-toggle="sticky" data-sticky-offset="50">
+                        <div class="card">
+                            <div class="card-body">
+                                <nav class="nav nav-pills flex-column text-sm" id="toc">
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-12x">
-                    <iframe class="calendly"
-                        loading="lazy"
-                        src="https://calendly.com/xtages/discussion?back=0&embed_type=Inline"></iframe>
+                <div class="col-lg-8">
+
+                    <!-- REPLACED WITH CONTENT FROM MARKDOWN -->
+
                 </div>
             </div>
         </div>
@@ -247,7 +202,8 @@
             <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
                 <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px"
-                    viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                    viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve"
+                    class=" fill-primary">
                     <polygon points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>
@@ -264,53 +220,46 @@
                                     maintain infrastructure for your development teams.
                                 </p>
                             </div>
-                            <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
-                                <a href="pricing.html" class="btn btn-primary my-2 ml-0 ml-sm-3">
-                                    Pricing
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <hr class="divider divider-fade divider-dark my-5">
                 <div class="row">
                     <div class="col-lg-11 mb-5 mb-lg-0">
-                        <div class="col-lg-9">
-                            <!-- Theme's logo -->
-                            <a href="/">
-                                <img alt="Xtages Logo" src="img/logo_white.svg" id="footer-logo" height="37" />
-                            </a>
-                            <p class="mt-4 text-sm opacity-8 pr-lg-4">
-                                Are you ready to supercharge your software workflow?
-                            </p>
-                            <!-- Social -->
-                            <ul class="nav mt-4">
-                                <li class="nav-item">
-                                    <a class="nav-link pl-0" href="https://www.linkedin.com/company/xtages"
-                                        target="_blank" rel="noopener" title="LinkedIn">
-                                        <i data-feather="linkedin"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.facebook.com/Xtages-358773591761681" target="_blank"
-                                        rel="noopener" title="Facebook">
-                                        <i data-feather="facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.twitter.com/xtages" target="_blank" rel="noopener"
-                                        title="Twitter">
-                                        <i data-feather="twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- Theme's logo -->
+                        <a href="/">
+                            <img alt="Xtages Logo" src="img/logo_white.svg" id="footer-logo" height="37" />
+                        </a>
+                        <p class="mt-4 text-sm opacity-8 pr-lg-4">
+                            Are you ready to supercharge your software workflow?
+                        </p>
+                        <!-- Social -->
+                        <ul class="nav mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="https://www.linkedin.com/company/xtages" target="_blank"
+                                    rel="noopener" title="LinkedIn">
+                                    <i data-feather="linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/Xtages-358773591761681"
+                                    target="_blank" rel="noopener" title="Facebook">
+                                    <i data-feather="facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.twitter.com/xtages" target="_blank" rel="noopener"
+                                    title="Twitter">
+                                    <i data-feather="twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-lg-1 col-6 col-sm-4 mb-5 mb-lg-0">
                         <ul class="list-unstyled">
                             <li><a href="/">Home</a></li>
                             <li><a href="overview.html">Overview</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="/blog">Blog</a></li>
                         </ul>
                     </div>

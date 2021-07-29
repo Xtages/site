@@ -47,6 +47,10 @@ abbr {
     width: 280px;
 }
 
+ul.nav.sidenav {
+  display: block;
+}
+
 @include media-breakpoint-up(sm) {
     .calendly {
       height: 600px;
