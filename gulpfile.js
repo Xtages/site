@@ -9,13 +9,18 @@ const buffer = require('vinyl-buffer');
 const cleanCss = require('gulp-clean-css');
 const del = require('del');
 const { exec } = require('child_process');
+const fs = require('fs');
 const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
+const path = require('path');
 const postcss = require('gulp-postcss');
 const purgecss = require('gulp-purgecss')
+const { Remarkable } = require('remarkable');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const source = require('vinyl-source-stream');
+const { Transform }  = require('stream');
+const toc = require('html-toc');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 
@@ -40,6 +45,8 @@ var paths = {
 		css: './css/**/*.scss',
 		js: './js/**/*.js',
 		img: './img/**/*.+(png|jpg|gif|svg|ico)',
+		md: './*.md',
+		tpl: './*.html.tpl',
 	},
 	blog: {
 		base: './blog'
@@ -119,6 +126,34 @@ function copyImages() {
 		}));
 }
 
+function genTermsAndPrivacyPolicy() {
+	return src([paths.src.md, '!README.md'])
+		.pipe(new Transform({
+			readableObjectMode: true,
+			writableObjectMode: true,
+			transform(file, encoding, callback) {
+				const md = new Remarkable();
+				const mdContent = md.render(file.contents.toString());
+				const dirname = path.dirname(file.path);
+				const basename = path.basename(file.path, '.md');
+				const tplPath = path.join(dirname, `${basename}.html.tpl`);
+				const tplContent = fs.readFileSync(tplPath).toString();
+				const html = tplContent.replace('<!-- REPLACED WITH CONTENT FROM MARKDOWN -->', mdContent);
+				const htmlWithToc = toc(html, {
+					id: '#toc',
+					selectors: 'h2',
+					anchorsLink: false,
+				});
+				file.contents = Buffer.from(htmlWithToc);
+				file.extname = '.html';
+				callback(null, file);
+			}
+		}))
+		.pipe(dest(paths.dist.base))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
+}
 
 // Clean
 function clean() {
@@ -147,6 +182,7 @@ function execHugo(params, done) {
 	proc.stderr.on('data', console.error);
 }
 
+
 // Live realoading 
 
 // Initialize the browsersync
@@ -166,6 +202,7 @@ function browserSyncInit(openTab) {
 }
 
 function watchFiles() {
+	watch([paths.src.md, paths.src.tpl], genTermsAndPrivacyPolicy);
 	watch(paths.src.js, compileJs);
 	watch(paths.src.css, compileScss);
 	watch(paths.src.img, copyImages);
@@ -174,7 +211,7 @@ function watchFiles() {
 
 
 // Build everything
-const build = series(clean, copyImages, copyHtml, compileScss, compileJs, buildBlog);
+const build = series(clean, copyImages, copyHtml, compileScss, compileJs, buildBlog, genTermsAndPrivacyPolicy);
 
 // Build and start the livereload server
 function dev() {
