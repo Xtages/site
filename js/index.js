@@ -1,4 +1,3 @@
-
 const feather = require('feather-icons');
 window.jQuery = window.$ = require('jquery');
 require('bootstrap/js/dist/collapse');
@@ -43,7 +42,7 @@ function maybeDoGtag(method, event, argsMap) {
     }
 }
 
-(function registerSubmitSubscribeForm(formEl) {
+(function registerSubmitSubscribeForm() {
     window['submitSubscribeForm'] = function (formEl) {
         function showThanks() {
             const thanks = document.getElementById('subscribe-thanks');
@@ -54,7 +53,8 @@ function maybeDoGtag(method, event, argsMap) {
         if (!formEl.classList.contains('submitted')) {
             const form = new FormData(formEl);
             const honeyPot = form.get('___honey___pot');
-            if (honeyPot == null || honeyPot == '') {
+            form.set('entry.1961309452', window.___planName);
+            if (honeyPot == null || honeyPot === '') {
                 function doSubmit() {
                     formEl.classList.add('submitted');
                     try {
@@ -66,16 +66,18 @@ function maybeDoGtag(method, event, argsMap) {
                         req.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
                         req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
                         req.send(data);
-                    } catch (e) { } finally {
+                    } catch (e) {
+                    } finally {
                         showThanks();
                     }
                 }
+
                 maybeDoGtag('event', 'sign_up', {
-                    'method': this.___planName || 'form',
+                    'method': window.___planName || 'form',
                     'event_callback': doSubmit
                 });
             } else {
-                maybeDoGtag('event', 'exception', { 'description': 'Honey pot not empty' });
+                maybeDoGtag('event', 'exception', {'description': 'Honey pot not empty'});
             }
         }
         return false;
@@ -83,7 +85,7 @@ function maybeDoGtag(method, event, argsMap) {
 })();
 
 
-(function registerSubmitContactForm(formEl) {
+(function registerSubmitContactForm() {
     window['submitContactForm'] = function (formEl) {
         function showThanks() {
             const thanks = document.getElementById('contact-thanks');
@@ -94,7 +96,7 @@ function maybeDoGtag(method, event, argsMap) {
         if (!formEl.classList.contains('submitted')) {
             const form = new FormData(formEl);
             const honeyPot = form.get('___honey___pot');
-            if (honeyPot == null || honeyPot == '') {
+            if (honeyPot == null || honeyPot === '') {
                 function doSubmit() {
                     formEl.classList.add('submitted');
                     try {
@@ -106,16 +108,18 @@ function maybeDoGtag(method, event, argsMap) {
                         req.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
                         req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
                         req.send(data);
-                    } catch (e) { } finally {
+                    } catch (e) {
+                    } finally {
                         showThanks();
                     }
                 }
+
                 maybeDoGtag('event', 'contact_us', {
-                    'method': this.___planName || 'form',
+                    'method': window.___planName || 'form',
                     'event_callback': doSubmit
                 });
             } else {
-                maybeDoGtag('event', 'exception', { 'description': 'Honey pot not empty' });
+                maybeDoGtag('event', 'exception', {'description': 'Honey pot not empty'});
             }
         }
         return false;
@@ -128,18 +132,124 @@ function maybeDoGtag(method, event, argsMap) {
     });
 })();
 
-(function registerCapturePurchase(anchor, planName) {
-    window['capturePurchase'] = function capturePurchase(anchor, planName) {
+(function () {
+    window['captureJoinMailingList'] = function captureJoinMailingList(anchor, planName) {
         window.___planName = planName;
-        maybeDoGtag('event', 'select_content', {
-            'content_type': 'product',
+        maybeDoGtag('event', 'select_item', {
+            'item_list_name': anchor.href,
             'items': [{
-                'id': planName,
-                'name': planName,
+                'item_id': planName,
+                'item_name': planName,
             }],
             'event_callback': function () {
                 document.location = anchor.href;
             }
         });
-    }
+    };
+
+    window['captureJoinWaitList'] = function captureJoinWaitList(anchor) {
+        const priceId = anchor.dataset.priceId;
+        window.___planName = anchor.dataset.planSku;
+        maybeDoGtag('event', 'add_to_wishlist', {
+            'items': [{
+                'item_id': anchor.dataset.planSku,
+                'item_name': priceId,
+            }],
+            'event_callback': function () {
+                document.location = anchor.href;
+            }
+        });
+    };
+
+    window['capturePurchase'] = function capturePurchase(anchor) {
+        const priceId = anchor.dataset.priceId;
+        window.___planName = anchor.dataset.planSku;
+        maybeDoGtag('event', 'begin_checkout', {
+            'items': [{
+                'item_id': anchor.dataset.planSku,
+                'item_name': priceId,
+            }],
+            'event_callback': function () {
+                document.location = anchor.href;
+            }
+        });
+    };
+
+    window['toggleBillingCycle'] = function toggleBillingCycle(button) {
+        if (button.classList.contains('active')) {
+            return;
+        }
+        const plans = {
+            'trial': {
+                'monthly': {
+                    'priceId': 'price_1JF4NqIfxICi4AQgRTjmOWNf',
+                    'price': '0',
+                    'sku': 'trial-monthly',
+                },
+                'yearly': {
+                    'priceId': 'price_1JF4NxIfxICi4AQgoeBWQ46u',
+                    'price': '0',
+                    'sku': 'trial-yearly',
+                },
+            },
+            'starter': {
+                'monthly': {
+                    'priceId': 'price_1JF4NqIfxICi4AQgRTjmOWNf',
+                    'price': '229',
+                    'sku': 'starter-monthly',
+                    'billingInfo': 'per month'
+                },
+                'yearly': {
+                    'priceId': 'price_1JF4NxIfxICi4AQgoeBWQ46u',
+                    'price': '199',
+                    'sku': 'starter-yearly',
+                    'billingInfo': 'per month, paid yearly'
+                },
+            },
+            'pro': {
+                'monthly': {
+                    'priceId': 'price_1JF4MZIfxICi4AQgU4RtfIBc',
+                    'price': '585',
+                    'sku': 'pro-monthly',
+                    'billingInfo': 'per month'
+                },
+                'yearly': {
+                    'priceId': 'price_1JF4NiIfxICi4AQg9EsBpsl5',
+                    'price': '509',
+                    'sku': 'pro-yearly',
+                    'billingInfo': 'per month, paid yearly'
+                },
+            },
+        };
+        const isMonthly = button.dataset.pricing === 'monthly';
+        const cycle = isMonthly ? 'monthly' : 'yearly';
+        const buttonToToggle = isMonthly ? 'yearly' : 'monthly';
+        button.classList.add('active');
+        button.classList.remove('btn-soft-primary');
+        button.classList.add('btn-primary');
+        document.querySelectorAll(`[data-pricing="${buttonToToggle}"]`).forEach((toToggle) => {
+            toToggle.classList.remove('active');
+            toToggle.classList.add('btn-soft-primary');
+            toToggle.classList.remove('btn-primary');
+        });
+        for (let planKey in plans) {
+            const plan = plans[planKey];
+            const planForCycle = plan[cycle];
+            document.querySelectorAll(`[data-plan-price-id="${planKey}"]`).forEach((planPriceEl) => {
+                planPriceEl.textContent = planForCycle.price;
+            });
+            document.querySelectorAll(`a[data-purchase-button="${planKey}"]`).forEach((anchorEl) => {
+                const url = new URL(anchorEl.href);
+                if (url.searchParams.has('priceId')) {
+                    url.searchParams.set('priceId', planForCycle.priceId);
+                }
+                anchorEl.href = url.toString();
+                anchorEl.dataset.priceId = planForCycle.priceId;
+                anchorEl.dataset.planSku = planForCycle.sku;
+            })
+            document.querySelectorAll(`[data-plan-billing-info="${planKey}"]`).forEach((planBillingInfoEl) => {
+                planBillingInfoEl.textContent = planForCycle.billingInfo;
+            })
+        }
+    };
 })();
