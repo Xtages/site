@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @include _head.html -->
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- @include _header.html -->
+
+    <!-- Main content -->
+    <section>
+        <!-- Container -->
+        <div class="container d-flex align-items-center text-center text-lg-left py-5 py-lg-6 border-bottom">
+            <div class="col px-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <!-- Title -->
+                        <h1 class="mb-2">Terms and Conditions</h1>
+                        <h6 class="font-weight-light text-muted">Last updated: July 29th, 2021</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice">
+        <div class="container">
+            <div class="row row-grid justify-content-between">
+                <div class="col-lg-3">
+                    <div data-toggle="sticky" data-sticky-offset="50">
+                        <div class="card">
+                            <div class="card-body">
+                                <nav class="nav nav-pills flex-column text-sm" id="toc">
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+
+                    <!-- @echo CONTENT -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- @include _footer.html -->
+</body>
+
+</html>
