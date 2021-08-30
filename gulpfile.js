@@ -116,9 +116,9 @@ function copyHtml() {
         .pipe(preprocess({
             includeBase: paths.src.partialsDir,
             context: {
-                ENABLE_MAILING_LIST: process.env.ENABLE_MAILING_LIST,
-                ENABLE_WAITING_LIST: process.env.ENABLE_WAITING_LIST,
-                ENABLE_DIRECT_PURCHASE: process.env.ENABLE_DIRECT_PURCHASE,
+                ENABLE_MAILING_LIST: isBoolTrue(process.env.ENABLE_MAILING_LIST),
+                ENABLE_WAITING_LIST: isBoolTrue(process.env.ENABLE_WAITING_LIST),
+                ENABLE_DIRECT_PURCHASE: isBoolTrue(process.env.ENABLE_DIRECT_PURCHASE),
             }
         }))
         .pipe(dest(paths.dist.base))
