@@ -76,8 +76,8 @@
                       <li>Deploy 1 app</li>
                       <li>100 CI/CD credits (Linux)</li>
                       <li>Deploys to the Xtages Cloud</li>
-                      <li>OOTB metrics dashboard</li>
                       <li>Log collection</li>
+                      <li>Metrics dashboard <span class="text-muted text-sm">(coming soon)</span></li>
                     </ul>
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <a href="#join-wait"
@@ -124,12 +124,12 @@
                   </div>
                   <div class="card-body">
                     <ul class="list-unstyled text-sm mb-4">
-                      <li>Deploy up to 2 apps</li>
+                      <li>Deploy 1 app</li>
                       <li>2500 CI/CD credits (Linux)</li>
                       <li>20 GB of data-transfer</li>
                       <li>Deploys to the Xtages Cloud</li>
-                      <li>OOTB metrics dashboard</li>
                       <li>Log collection</li>
+                      <li>Metrics dashboard <span class="text-muted text-sm">(coming soon)</span></li>
                       <li>Support over email</li>
                     </ul>
                     <!-- @if ENABLE_WAITING_LIST=true -->
@@ -176,12 +176,12 @@
                   </div>
                   <div class="card-body">
                     <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                      <li>Deploy up to 5 apps</li>
+                      <li>Deploy up to 3 apps</li>
                       <li>7500 CI/CD credits (Linux)</li>
                       <li>500 GB of data-transfer</li>
                       <li>Deploys to the Xtages Cloud</li>
-                      <li>OOTB metrics dashboard</li>
                       <li>Log collection</li>
+                      <li>Metrics dashboard <span class="text-sm">(coming soon)</span></li>
                       <li>Support over email (24hr SLA)</li>
                     </ul>
                     <!-- @if ENABLE_WAITING_LIST=true -->
@@ -399,7 +399,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-10 mx-auto">
-          <table class="table table-bordered table-responsive-sm mx-auto text-center">
+          <table class="table table-bordered table-responsive-sm mx-auto text-center specs">
             <thead>
               <tr>
                 <th scope="col"></th>
@@ -412,8 +412,8 @@
               <tr>
                 <th scope="row" class="text-left">No. of apps</th>
                 <td>1</td>
-                <td>2</td>
-                <td>5</td>
+                <td>1</td>
+                <td>3</td>
               </tr>
               <tr>
                 <th scope="row" class="text-left">Per app specs</th>
@@ -434,16 +434,16 @@
                 <td>2 vCPU<br/> 8GB RAM<br/> 20GB of storage</td>
               </tr>
               <tr>
-                <th scope="row" class="text-left">Metrics dashboard</th>
+                <th scope="row" class="text-left">Log collection</th>
                 <td>best effort</td>
                 <td>yes</td>
                 <td>yes</td>
               </tr>
               <tr>
-                <th scope="row" class="text-left">Log collection</th>
-                <td>best effort</td>
-                <td>yes</td>
-                <td>yes</td>
+                <th scope="row" class="text-left">Metrics dashboard</th>
+                <td><span class="text-sm">(coming soon)</span></td>
+                <td><span class="text-sm">(coming soon)</span></td>
+                <td><span class="text-sm">(coming soon)</span></td>
               </tr>
             </tbody>
           </table>
@@ -475,9 +475,8 @@
             <div class="card">
               <div class="card-header py-4" id="heading-1" data-toggle="collapse" role="button"
                    data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1-1">
-                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>What happens at the end
-                  of my
-                  free trial?
+                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>
+                  What happens at the end of my free trial?
                 </h6>
               </div>
               <div id="collapse-1" class="collapse" aria-labelledby="heading-1"
@@ -498,15 +497,15 @@
                    data-parent="#accordion-1">
                 <div class="card-body">
                   <p>Yes. You may purchase addons to increase: storage, compute power and CI/CD
-                    credits.</p>
+                    credits. Feel free to <a href="mailto:support@xtages.com">contact us</a> for more information.</p>
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-header py-4" id="heading-3" data-toggle="collapse" role="button"
                    data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>How can I use my
-                  CI/CD credits?
+                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>
+                  How can I use my CI/CD credits?
                 </h6>
               </div>
               <div id="collapse-3" class="collapse" aria-labelledby="heading-3"
@@ -520,14 +519,14 @@
             <div class="card">
               <div class="card-header py-4" id="heading-4" data-toggle="collapse" role="button"
                    data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Do credits expire?
+                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Do CI/CD credits expire?
                 </h6>
               </div>
               <div id="collapse-4" class="collapse" aria-labelledby="heading-4"
                    data-parent="#accordion-1">
                 <div class="card-body">
-                  <p>No, your credits don't expire. Unused credits will be forfeited if you
-                    cancel your subscription.</p>
+                  <p>Yes, your credit allowance is reset at the beginning of your billing cycle.
+                  </p>
                 </div>
               </div>
             </div>
@@ -538,13 +537,15 @@
             <div class="card">
               <div class="card-header py-4" id="heading-5" data-toggle="collapse" role="button"
                    data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>Can I change my CI/CD
-                  runners once selected?</h6>
+                <h6 class="mb-0"><i data-feather="help-circle" class="mr-3"></i>
+                  Can I change my CI/CD runners once selected?
+                </h6>
               </div>
               <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
                    data-parent="#accordion-2">
                 <div class="card-body">
-                  <p>Yes, you can change your configuration at any time.</p>
+                  <p>We currently only support one type of runner (Linux) but in the future you'll be able to select
+                  the spec of the runners used in your pipelines.</p>
                 </div>
               </div>
             </div>
@@ -559,11 +560,11 @@
               <div id="collapse-6" class="collapse" aria-labelledby="heading-6"
                    data-parent="#accordion-2">
                 <div class="card-body">
-                  <p>We can accommodate most needs for CI/CD runner, DBs and app server specs.</p>
+                  <p>We can accommodate most needs for DBs and app server specs.</p>
                   <p>We plan to keep expanding our CI/CD platform offerings with ARM, GPU, Windows and
                     macOS in the near future.</p>
                   <p>
-                    <a href="contact.html">Drop us a line</a> if you have
+                    <a href="mailto:support@xtages.com">Drop us a line</a> if you have
                     more specific needs.
                   </p>
                 </div>

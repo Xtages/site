@@ -78,3 +78,10 @@ ul.nav.sidenav {
       min-width: 1000px;
     }
 }
+
+.specs th {
+  background-color: lighten($success, 30%) !important;
+  color: darken($success, 25%);
+  font-weight: bolder;
+  border: none !important;
+}
