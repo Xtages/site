@@ -74,10 +74,10 @@
 <script>
     window.gaIsLoaded = false;
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag(function() {
+    dataLayer.push(function() {
         window.gaIsLoaded = true;
     });
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-190737020-1');
     gtag('event', 'screen_view', {
