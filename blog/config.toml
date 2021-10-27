@@ -6,6 +6,9 @@ staticDir = ['static']
 googleAnalytics = "UA-190737020-1"
 publishDir = "../dist/blog"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
     description = """
 The Lifecycle.
