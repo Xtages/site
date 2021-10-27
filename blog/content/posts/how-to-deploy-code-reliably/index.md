@@ -1,13 +1,11 @@
 ---
 title: "How to Deploy Code Reliably"
 date: 2021-10-27T12:13:36-07:00
-tags: ['reliability', 'deployments', 'launch']
+tags: ['continuous integration', 'continuous delivery', 'software engineering', 'deployment', 'best practices']
 author: mdellamerlina
 featured_image: feature.jpg
 featured_image_alt_text: NASA, Public domain, via Wikimedia Commons, <https://upload.wikimedia.org/wikipedia/commons/1/13/Discovery_launches.jpg>
 ---
-
-# How to deploy code reliably?
 
 Nowadays there are a myriad of ways to deploy an application, mostly depending on the tech stack that you use and the underlying infrastructure where the code runs. Those two things limit your technical options, for example, some of the technical details of deploying to bare metal vs AWS Lambda and ECS - pipelines, subtasks, and scripts just to name a few.
 The other side of the coin is the workflows or processes to perform a release, such as communications, approvals, when, from where, and how to perform the deployment. Some examples of tech stacks and infrastructure combinations are:

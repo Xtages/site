@@ -9,7 +9,7 @@
             <small class="d-block text-sm mb-2">{{ .Params.Date.Format "January 2, 2006" }}</small>
             <div class="mb-2">
                 {{ range .Params.tags }}
-                    <span class="badge badge-success badge-pill">{{- . -}}</span>
+                    <span class="badge badge-success badge-pill d-inline-block">{{- . -}}</span>
                 {{ end }}
             </div>
             <a href="{{.RelPermalink}}" class="h5 stretched-link lh-150">{{ .Title }}</a>
