@@ -14,7 +14,7 @@
     <div class="container position-relative zindex-100">
       <div class="row mb-5 justify-content-center text-center">
         <div class="col-lg-7 col-md-9">
-          <h3 class="h2 lh-170">Build, test and deploy your code <strong>faster</strong>.</h3>
+          <h3 class="h2 lh-170">CI/CD and PaaS made <strong>simple</strong> and <strong>faster</strong>.</h3>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -30,7 +30,7 @@
                 <button type="button" class="btn btn-primary active" data-pricing="yearly"
                         onclick="return toggleBillingCycle(this)">
                   <span>Yearly</span>
-                  <span class="badge badge-success badge-pill badge-floating">-10%</span>
+                  <span class="badge badge-success badge-pill badge-floating">-25%</span>
                 </button>
               </div>
             </div>
@@ -45,7 +45,7 @@
                 <button type="button" class="btn btn-primary active" data-pricing="yearly"
                         onclick="return toggleBillingCycle(this)">
                   <span>Yearly</span>
-                  <span class="badge badge-success badge-pill badge-floating">-13%</span>
+                  <span class="badge badge-success badge-pill badge-floating">-25%</span>
                 </button>
               </div>
             </div>
@@ -55,47 +55,46 @@
                 <div class="card card-pricing border-0 text-center px-3">
                   <div class="card-header border-0 delimiter-bottom">
                     <!-- @if ENABLE_WAITING_LIST=true -->
-                    <span class="h6 text-muted">Trial</span>
-                    <div class="h1 text-center mb-0">$<span data-plan-price-id="trial" class="price font-weight-bolder">0</span>
+                    <span class="h6 text-muted">Free</span>
+                    <div class="h1 text-center mb-0">$<span data-plan-price-id="free" class="price font-weight-bolder">0</span>
                     </div>
+                    <div class="text-sm">no credit card required</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <span class="h6 text-muted">Trial</span>
-                    <div class="h1 text-center mb-0">$<span data-plan-price-id="trial" class="price font-weight-bolder">0</span>
+                    <span class="h6 text-muted">Free</span>
+                    <div class="h1 text-center mb-0">$<span data-plan-price-id="free" class="price font-weight-bolder">0</span>
                     </div>
+                    <div class="text-sm">no credit card required</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
-                    <h2 class="h3 text-muted">Trial</h2>
+                    <h2 class="h3 text-muted">Free</h2>
                     <!-- @endif -->
                   </div>
                   <div class="card-body">
-                    <p class="mb-2 subtitle">
-                      <mark>upgraded to Starter after 14 days</mark>
-                    </p>
                     <ul class="list-unstyled text-sm mb-4">
                       <li>Deploy 1 app</li>
-                      <li>2500 CI/CD minutes (Linux)</li>
-                      <li>20 GB of data-transfer</li>
+                      <li>100 CI/CD minutes (Linux)</li>
+                      <li>1 GB of data-transfer</li>
                       <li>Deploys to the Xtages Cloud</li>
                       <li>Log collection</li>
                       <li>Metrics dashboard <span class="text-muted text-sm">(coming soon)</span></li>
                     </ul>
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <a href="#join-wait"
-                       data-purchase-button="trial" data-price-id="price_1JF4NxIfxICi4AQgoeBWQ46u"
-                       data-plan-sku="trial-yearly"
+                       data-purchase-button="free" data-price-id=""
+                       data-plan-sku="free-yearly"
                        onclick="return captureJoinWaitList(this)"
                        class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Join waiting list</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <a href="https://console.xtages.com/signup?priceId=price_1JF4NxIfxICi4AQgoeBWQ46u"
-                       data-purchase-button="trial" data-price-id="price_1JF4NxIfxICi4AQgoeBWQ46u"
-                       data-plan-sku="trial-yearly"
+                    <a href="https://console.xtages.com/signup"
+                       data-purchase-button="free" data-price-id=""
+                       data-plan-sku="free-yearly"
                        onclick="return capturePurchase(this)"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Start trial</a>
+                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Start for free</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
-                    <a href="#join-title" data-plan-name="Trial" onclick="return captureJoinMailingList(this, 'Free')"
+                    <a href="#join-title" data-plan-name="Free" onclick="return captureJoinMailingList(this, 'Free')"
                        class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Keep
                       me updated</a>
                     <!-- @endif -->
@@ -108,14 +107,14 @@
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <span class="h6 text-muted">Starter</span>
                     <div class="h1 text-center mb-0">$<span data-plan-price-id="starter"
-                                                            class="price font-weight-bolder">199</span>
+                                                            class="price font-weight-bolder">150</span>
                     </div>
                     <span data-plan-billing-info="starter" class="text-sm">per month, paid yearly</span>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
                     <span class="h6 text-muted">Starter</span>
                     <div class="h1 text-center mb-0">$<span data-plan-price-id="starter"
-                                                            class="price font-weight-bolder">199</span>
+                                                            class="price font-weight-bolder">150</span>
                     </div>
                     <span data-plan-billing-info="starter" class="text-sm">per month, paid yearly</span>
                     <!-- @endif -->
@@ -141,7 +140,7 @@
                        class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Join waiting list</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <a href="https://console.xtages.com/signup?priceId=price_1JF4NxIfxICi4AQgoeBWQ46u"
+                    <a href="https://console.xtages.com/signup"
                        data-purchase-button="starter" data-price-id="price_1JF4NxIfxICi4AQgoeBWQ46u"
                        data-plan-sku="starter-yearly"
                        onclick="return capturePurchase(this)"
@@ -162,13 +161,13 @@
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <span class="h6 text-white">Professional</span>
                     <div class="h1 text-white text-center mb-0">$<span data-plan-price-id="pro"
-                                                                       class="price font-weight-bolder">509</span></div>
+                                                                       class="price font-weight-bolder">350</span></div>
                     <span data-plan-billing-info="pro" class="text-sm text-white">per month, paid yearly</span>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
                     <span class="h6 text-white">Professional</span>
                     <div class="h1 text-white text-center mb-0">$<span data-plan-price-id="pro"
-                                                                       class="price font-weight-bolder">509</span></div>
+                                                                       class="price font-weight-bolder">350</span></div>
                     <span data-plan-billing-info="pro" class="text-sm text-white">per month, paid yearly</span>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
@@ -193,7 +192,7 @@
                        class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Join waiting list</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <a href="https://console.xtages.com/signup?priceId=price_1JF4NiIfxICi4AQg9EsBpsl5"
+                    <a href="https://console.xtages.com/signup"
                        data-purchase-button="pro" data-price-id="price_1JF4NiIfxICi4AQg9EsBpsl5"
                        data-plan-sku="pro-yearly"
                        onclick="return capturePurchase(this)"
@@ -252,7 +251,7 @@
     <div class="container pt-lg-7">
       <div class="row mb-6 justify-content-center text-center">
         <div class="col-lg-8 col-md-10">
-          <h3 class=" mt-4">Addons</h3>
+          <h3 class=" mt-4">Add-ons</h3>
         </div>
       </div>
       <div class="row mx-lg-n4">
@@ -404,6 +403,7 @@
             <thead>
               <tr>
                 <th scope="col"></th>
+                <th scope="col">Free</th>
                 <th scope="col">Starter</th>
                 <th scope="col">Professional</th>
               </tr>
@@ -412,10 +412,18 @@
               <tr>
                 <th scope="row" class="text-left">No. of apps</th>
                 <td>1</td>
+                <td>1</td>
                 <td>3</td>
               </tr>
               <tr>
+                <th scope="row" class="text-left">No. of environments per app</th>
+                <td>1 <span class="d-block">(production)</span></td>
+                <td>2 <span class="d-block">(staging and production)</span></td>
+                <td>2 <span class="d-block">(staging and production)</span></td>
+              </tr>
+              <tr>
                 <th scope="row" class="text-left">Per app specs</th>
+                <td>Best effort</td>
                 <td>2 vCPU<br/> 4GB RAM</td>
                 <td>2 vCPU<br/> 4GB RAM</td>
               </tr>
@@ -423,9 +431,11 @@
                 <th scope="row" class="text-left">No. of DBs</th>
                 <td>1</td>
                 <td>1</td>
+                <td>1</td>
               </tr>
               <tr>
                 <th scope="row" class="text-left">DB specs</th>
+                <td>Best effort<br/>5GB of storage</td>
                 <td>2 vCPU<br/> 8GB RAM<br/> 20GB of storage</td>
                 <td>2 vCPU<br/> 8GB RAM<br/> 20GB of storage</td>
               </tr>
@@ -433,9 +443,11 @@
                 <th scope="row" class="text-left">Log collection</th>
                 <td>yes</td>
                 <td>yes</td>
+                <td>yes</td>
               </tr>
               <tr>
                 <th scope="row" class="text-left">Metrics dashboard</th>
+                <td><span class="text-sm">(coming soon)</span></td>
                 <td><span class="text-sm">(coming soon)</span></td>
                 <td><span class="text-sm">(coming soon)</span></td>
               </tr>

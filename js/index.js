@@ -180,42 +180,38 @@ function maybeDoGtag(method, event, argsMap) {
             return;
         }
         const plans = {
-            'trial': {
+            'free': {
                 'monthly': {
-                    'priceId': 'price_1JF4NqIfxICi4AQgRTjmOWNf',
+                    'priceId': '',
                     'price': '0',
-                    'sku': 'trial-monthly',
+                    'sku': 'free-monthly',
                 },
                 'yearly': {
-                    'priceId': 'price_1JF4NxIfxICi4AQgoeBWQ46u',
+                    'priceId': '',
                     'price': '0',
-                    'sku': 'trial-yearly',
+                    'sku': 'free-yearly',
                 },
             },
             'starter': {
                 'monthly': {
-                    'priceId': 'price_1JF4NqIfxICi4AQgRTjmOWNf',
-                    'price': '229',
+                    'price': '188',
                     'sku': 'starter-monthly',
                     'billingInfo': 'per month'
                 },
                 'yearly': {
-                    'priceId': 'price_1JF4NxIfxICi4AQgoeBWQ46u',
-                    'price': '199',
+                    'price': '150',
                     'sku': 'starter-yearly',
                     'billingInfo': 'per month, paid yearly'
                 },
             },
             'pro': {
                 'monthly': {
-                    'priceId': 'price_1JF4MZIfxICi4AQgU4RtfIBc',
-                    'price': '585',
+                    'price': '438',
                     'sku': 'pro-monthly',
                     'billingInfo': 'per month'
                 },
                 'yearly': {
-                    'priceId': 'price_1JF4NiIfxICi4AQg9EsBpsl5',
-                    'price': '509',
+                    'price': '350',
                     'sku': 'pro-yearly',
                     'billingInfo': 'per month, paid yearly'
                 },
