@@ -194,11 +194,13 @@ function maybeDoGtag(method, event, argsMap) {
             },
             'starter': {
                 'monthly': {
+                    'priceId': 'price_1JrxP2IfxICi4AQgc1IrRkmF',
                     'price': '188',
                     'sku': 'starter-monthly',
                     'billingInfo': 'per month'
                 },
                 'yearly': {
+                    'priceId': 'price_1JrxN0IfxICi4AQgOdyA0KrI',
                     'price': '150',
                     'sku': 'starter-yearly',
                     'billingInfo': 'per month, paid yearly'
@@ -206,11 +208,13 @@ function maybeDoGtag(method, event, argsMap) {
             },
             'pro': {
                 'monthly': {
+                    'priceId': 'price_1JrxRfIfxICi4AQgqOq4bq3C',
                     'price': '438',
                     'sku': 'pro-monthly',
                     'billingInfo': 'per month'
                 },
                 'yearly': {
+                    'priceId': 'price_1JrxQUIfxICi4AQgdh0e4NG3',
                     'price': '350',
                     'sku': 'pro-yearly',
                     'billingInfo': 'per month, paid yearly'
