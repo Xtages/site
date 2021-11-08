@@ -1,14 +1,14 @@
 ---
-title: "React and Cognito"
+title: "React <> Cognito"
 date: 2021-11-05T19:10:09-07:00
 tags: ['react', 'aws', 'cognito', 'terraform']
-featured_image: feature.jpg
-featured_image_alt_text: FIXME
+featured_image: feature.png
+featured_image_alt_text: React logo and AWS Cognito logo
 author: czuniga
 ---
 
 
-At [Xtages](https://www.xtages.com), we use [Amazon Cognito](https://aws.amazon.com/cognito/) to manager our users and
+At [Xtages](https://www.xtages.com), we use [Amazon Cognito](https://aws.amazon.com/cognito/) to manage our users and
 their authentication.
 
 Cognito collects a user's attributes and enables simple, secure user authentication, authorization and user management
