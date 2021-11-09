@@ -7,19 +7,32 @@ featured_image_alt_text: React logo and AWS Cognito logo
 author: czuniga
 ---
 
+<div class="alert alert-outline-secondary">
+  Find the full source code for this post in <a href="https://github.com/Xtages/poc-react-cognito">Xtages/poc-react-cognito</a>.
+</div>
 
 At [Xtages](https://www.xtages.com), we use [Amazon Cognito](https://aws.amazon.com/cognito/) to manage our users and
 their authentication.
 
-Cognito collects a user's attributes and enables simple, secure user authentication, authorization and user management
+Cognito collects a user's attributes, it enables simple, secure user authentication, authorization and user management
 for web and mobile apps.
 
-Next, we will see how we integrated Cognito into our console React web app.
+# Overview of Cognito
 
-<div class="alert alert-outline-warning" role="alert">
-  Later on in this post, we'll also see how to create Cognito resources using
-  <a href="https://www.terraform.io/" rel="noopener noreferrer">Terraform</a>.
-</div>
+In this section, we'll take a 5000 feet view of how Cognito integrates with a web app.
+
+{{< figure src="sequence.svg" alt="Cognito sign up and log in sequence diagram" class="d-flex justify-content-center in-content" >}}
+
+Cognito requires users to verify their email or phone number to enable password recovery flow. The way that verification
+works is by sending a numeric code to the user's email or phone number (using SMS) and the user the app then calling
+`CognitoAuth.confirmSignUp` like step #6 of the diagram above.
+
+Next, we'll see how to:
+
+* Create a new React webapp using `create-react-app`
+* Add a `useAuth` hook and `<AuthProvider>` `Context`
+* Create authenticated and unauthenticated `Route`s
+* Provision a Cognito user pool using [Terraform](https://www.terraform.io/)
 
 # Integration with React
 
@@ -127,20 +140,20 @@ You'll notice a few points in the snippet above:
 ### Secure routing
 
 Below, `<AuthenticatedRoute>` is using `useAuth` to determine if the authentication is in progress (and if so display
-and empty page), if we have an authenticated user we then route to the specified component and if we don't have an
+an empty page), if we have an authenticated user we then route to the specified component and if we don't have an
 authenticated user then we redirect to the `/login` page, preserving the `location` in the state, so we can redirect to
 it once the user successfully logs in.
 
 {{< gist czuniga-xtages e5087dde03b9a358712bd3842fb335c8 "AuthenticatedRoute.tsx" >}}
 
-[`<UnauthenticatedOnlyRoute>`](https://github.com/Xtages/demo-react-cognito/blob/main/demo-app/src/components/authn/UnauthenticatedOnlyRoute.tsx)
+[`<UnauthenticatedOnlyRoute>`](https://github.com/Xtages/poc-react-cognito/blob/main/demo-app/src/components/authn/UnauthenticatedOnlyRoute.tsx)
 is basically a mirror of `<AuthenticatedRoute>` in that it will only render the `Route` if the user is **not
 authenticated**, redirecting to `/` otherwise.
 
 ### Login page
 
 The following is a very simple log-in page, for illustration purposes only, using the `useAuth` hook, although you'll
-probably want to use a proper react form library and may be some kind of UI library too.
+probably want to use a proper react form library and maybe some kind of UI library too.
 
 {{< gist czuniga-xtages 32e829c1aa3dedc3614a996c8447488f "LoginPage.tsx" >}}
 
@@ -175,6 +188,11 @@ client.
 
 AWS Cognito is a good option when it comes to user authentication and management. It's specially useful when you are
 already bought into the AWS ecosystem and it's also cheaper than some other alternatives.
+
+It's not too difficult to integrate React and Cognito, however Cognito's reference documentation for their
+Javascript/Typescript package leaves a lot to be desire, they also have several seemenly overlapping packages
+(`amplify`, `@aws-amplify/auth` and `amazon-cognito-identity-js`). They also tend to push Amplify as a whole
+for the auth solution when it's not really necessary to add all that code to your app.
 
 **At [Xtages](https://www.xtages.com) we are building an all-in-one solution for CI/CD and hosting of apps, all with
 minimal configuration and no infrastructure to manage. We recently introduced
