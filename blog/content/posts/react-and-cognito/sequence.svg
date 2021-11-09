@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="873.9583px" preserveAspectRatio="none" style="width:931px;height:873px;background:#00000000;" version="1.1" viewBox="0 0 931 873" width="931.25px" zoomAndPan="magnify"><defs><linearGradient id="g17k9v9ur89ydm0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient><linearGradient id="g17k9v9ur89ydm1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="f17k9v9ur89ydm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="g17k9v9ur89ydm2" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#B052C0"/><stop offset="100%" stop-color="#9C27B0"/></linearGradient></defs><g><rect fill="url(#g17k9v9ur89ydm0)" height="55.5013" rx="4.1667" ry="4.1667" style="stroke:#CCCCCC;stroke-width:1.0416666666666667;" width="177.0833" x="373.0729" y="14.5833"/><text fill="#2196F3" font-family="Verdana" font-size="20.8333" lengthAdjust="spacing" textLength="139.5833" x="391.8229" y="49.5463">Cognito Auth</text><rect fill="#FFFFFF" height="779.291" rx="4.1667" ry="4.1667" style="stroke:#666666;stroke-width:1.0416666666666667;" width="229.1667" x="305.7292" y="81.543"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="66.6667" x="386.9792" y="103.5624">Your app</text><rect fill="#FFFFFF" height="779.291" rx="4.1667" ry="4.1667" style="stroke:#666666;stroke-width:1.0416666666666667;" width="168.3333" x="744.4792" y="81.543"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="32.2917" x="812.5" y="103.5624">AWS</text><line style="stroke:#CCCCCC;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="56.25" x2="56.25" y1="189.8112" y2="867.084"/><line style="stroke:#CCCCCC;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="369.2708" x2="369.2708" y1="189.8112" y2="867.084"/><line style="stroke:#CCCCCC;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="484.8958" x2="484.8958" y1="189.8112" y2="867.084"/><line style="stroke:#CCCCCC;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="827.8125" x2="827.8125" y1="189.8112" y2="867.084"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="38.5417" y="176.4465">User</text><ellipse cx="56.7708" cy="95.0521" fill="url(#g17k9v9ur89ydm1)" filter="url(#f17k9v9ur89ydm)" rx="8.3333" ry="8.3333" style="stroke:#2196F3;stroke-width:2.0833333333333335;"/><path d="M56.7708,103.3854 L56.7708,131.5104 M43.2292,111.7188 L70.3125,111.7188 M56.7708,131.5104 L43.2292,147.1354 M56.7708,131.5104 L70.3125,147.1354 " fill="none" filter="url(#f17k9v9ur89ydm)" style="stroke:#2196F3;stroke-width:2.0833333333333335;"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="91.6667" x="320.3125" y="176.4465">React Webapp</text><ellipse cx="369.2708" cy="137.7604" fill="url(#g17k9v9ur89ydm1)" filter="url(#f17k9v9ur89ydm)" rx="12.5" ry="12.5" style="stroke:#2196F3;stroke-width:2.0833333333333335;"/><line style="stroke:#2196F3;stroke-width:2.0833333333333335;" x1="356.7708" x2="381.7708" y1="152.3438" y2="152.3438"/><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="64.5833" x="449.4792" y="176.4465">API Server</text><ellipse cx="484.8958" cy="137.7604" fill="url(#g17k9v9ur89ydm1)" filter="url(#f17k9v9ur89ydm)" rx="12.5" ry="12.5" style="stroke:#2196F3;stroke-width:2.0833333333333335;"/><line style="stroke:#2196F3;stroke-width:2.0833333333333335;" x1="472.3958" x2="497.3958" y1="152.3438" y2="152.3438"/><rect fill="#FFFFFF" filter="url(#f17k9v9ur89ydm)" height="62.0833" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.5625;" width="114.1667" x="769.4792" y="122.5195"/><text fill="#000000" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="47.9167" x="787.1875" y="163.9465">Cognito</text><image height="27.0833" width="27.0833" x="839.2708" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABWUlEQVR4XmNgIAHICkpxlzpm/t9VOec/uhxVgLWSqT3IAhgGWQTD6GrJAuGG/u3IFmCziCILyxwzL6IbTsgikiwDGvIX3VBsGN0CdIusFEyU46x9VZHNhgN0w7DhQC2v/16qLmC8OL0Lq0XojkG3B6tFRfbpcINhWFVYKRRIn0UWC9HxeU2yRQGanigGG3EZ8qCrxQeIsmhhaiduBUSCoWERcrwhG4JPLTY5uIJRi/CpxSYHVzDgFkUaBTThsOh2nI2/B7JadDXIcnAFuCwiBdDFouSQ2KgZud0vSLYoOSxK6PjKnV+B+H9yaKweup4TK3cuA8nB8KGpa78gBSvxFsGCYVpW50tkA5ExusHoGN0eFIt2V875AxPDhtENw4XrYvNT0e3BCtAtINYifTkNQXSz8AJ0CwhZhK6fJBCuHxhLyCJ0PRQBWzUDaXSL0NVQFQhzCgqgixEDAK7vIplLtOVrAAAAAElFTkSuQmCC" y="140.2279"/><rect fill="url(#g17k9v9ur89ydm0)" filter="url(#f17k9v9ur89ydm)" height="3.125" style="stroke:url(#g17k9v9ur89ydm0);stroke-width:1.0416666666666667;" width="924.2708" x="0" y="231.4616"/><line style="stroke:#666666;stroke-width:1.0416666666666667;" x1="0" x2="924.2708" y1="231.4616" y2="231.4616"/><line style="stroke:#666666;stroke-width:1.0416666666666667;" x1="0" x2="924.2708" y1="234.5866" y2="234.5866"/><rect fill="url(#g17k9v9ur89ydm0)" filter="url(#f17k9v9ur89ydm)" height="43.7174" style="stroke:#666666;stroke-width:2.0833333333333335;" width="94.7917" x="414.7396" y="210.6445"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="55.2083" x="431.4063" y="236.8306">Sign Up</text><polygon fill="#2196F3" points="356.7708,302.6954,367.1875,306.8621,356.7708,311.0288,360.9375,306.8621" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="56.7708" x2="363.0208" y1="306.8621" y2="306.8621"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="74.4792" y="291.1894">1</text><text fill="#222222" font-family="monospace" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="87.5" x="107.8125" y="290.8871">POST /signup</text><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="96.875" x="199.4792" y="291.4141">with profile info</text><polygon fill="#2196F3" points="816.1458,353.1122,826.5625,357.2789,816.1458,361.4455,820.3125,357.2789" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="369.2708" x2="822.3958" y1="357.2789" y2="357.2789"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="386.9792" y="341.6062">2</text><text fill="#222222" font-family="monospace" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="379.1667" x="420.3125" y="341.3038">CognitoAuth.signUp({email, password, name, country})</text><polygon fill="#2196F3" points="380.7292,403.0796,370.3125,407.2463,380.7292,411.413,376.5625,407.2463" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="374.4792" x2="827.6042" y1="407.2463" y2="407.2463"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="397.3958" y="391.7983">3</text><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="95.8333" x="430.7292" y="391.7983">challengeName</text><polygon fill="#2196F3" points="68.2292,453.0471,57.8125,457.2138,68.2292,461.3804,64.0625,457.2138" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="61.9792" x2="827.6042" y1="457.2138" y2="457.2138"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="84.8958" y="441.7658">4</text><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="153.125" x="119.2708" y="441.7658">[Email] Verification code</text><polygon fill="#2196F3" points="356.7708,503.4639,367.1875,507.6305,356.7708,511.7972,360.9375,507.6305" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="56.7708" x2="363.0208" y1="507.6305" y2="507.6305"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="74.4792" y="491.9579">5</text><text fill="#222222" font-family="monospace" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="94.7917" x="107.8125" y="491.6555">POST /confirm</text><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="134.375" x="206.7708" y="492.1825">with verification code</text><polygon fill="#2196F3" points="816.1458,553.8806,826.5625,558.0473,816.1458,562.214,820.3125,558.0473" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="369.2708" x2="822.3958" y1="558.0473" y2="558.0473"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="386.9792" y="542.3746">6</text><text fill="#222222" font-family="monospace" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="379.1667" x="421.3542" y="542.0723">CognitoAuth.confirmSignUp({email, verificationCode})</text><path d="M5.2083,575.7556 L5.2083,627.839 A4.1667,4.1667 0 0 0 9.375,632.0056 L876.0417,632.0056 A4.1667,4.1667 0 0 0 880.2083,627.839 L880.2083,582.0056 L869.7917,571.589 L9.375,571.589 A4.1667,4.1667 0 0 0 5.2083,575.7556 " fill="url(#g17k9v9ur89ydm2)" filter="url(#f17k9v9ur89ydm)" style="stroke:#9C27B0;stroke-width:1.0416666666666667;"/><path d="M869.7917,571.589 L869.7917,579.9223 A2.0833,2.0833 0 0 0 871.875,582.0056 L880.2083,582.0056 L869.7917,571.589 " fill="url(#g17k9v9ur89ydm2)" style="stroke:#9C27B0;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="434.375" x="218.9063" y="598.8167">Confirming signUp doesn't actually log the user in. So we have to call</text><text fill="#FFFFFF" font-family="monospace" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="123.9583" x="218.9063" y="613.2898">CognitoAuth.logIn</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="58.3333" x="347.0313" y="613.8168">explicitly.</text><rect fill="url(#g17k9v9ur89ydm0)" filter="url(#f17k9v9ur89ydm)" height="3.125" style="stroke:url(#g17k9v9ur89ydm0);stroke-width:1.0416666666666667;" width="924.2708" x="0" y="672.9986"/><line style="stroke:#666666;stroke-width:1.0416666666666667;" x1="0" x2="924.2708" y1="672.9986" y2="672.9986"/><line style="stroke:#666666;stroke-width:1.0416666666666667;" x1="0" x2="924.2708" y1="676.1236" y2="676.1236"/><rect fill="url(#g17k9v9ur89ydm0)" filter="url(#f17k9v9ur89ydm)" height="43.7174" style="stroke:#666666;stroke-width:2.0833333333333335;" width="84.375" x="419.9479" y="652.1815"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="44.7917" x="436.6146" y="678.3676">Log in</text><polygon fill="#2196F3" points="816.1458,744.2324,826.5625,748.3991,816.1458,752.5657,820.3125,748.3991" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="369.2708" x2="822.3958" y1="748.3991" y2="748.3991"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="386.9792" y="732.7264">7</text><text fill="#222222" font-family="monospace" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="262.5" x="421.3542" y="732.424">CognitoAuth.logIn({email, password})</text><polygon fill="#2196F3" points="380.7292,794.1998,370.3125,798.3665,380.7292,802.5332,376.5625,798.3665" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="374.4792" x2="827.6042" y1="798.3665" y2="798.3665"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="397.3958" y="782.9185">8</text><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="122.9167" x="431.7708" y="782.9185">JWT, Refresh Token</text><polygon fill="#2196F3" points="472.3958,844.1673,482.8125,848.334,472.3958,852.5006,476.5625,848.334" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="369.2708" x2="478.6458" y1="848.334" y2="848.334"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="386.9792" y="832.886">9</text><text fill="#222222" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="23.9583" x="421.3542" y="832.886">JWT</text><!--MD5=[ff89dc380b7c3e9462cc9968c176fb35]
+@startuml
+title "Cognito Auth"
+!theme materia
+hide footbox
+autonumber
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+
+actor User
+box "Your app"
+entity "React Webapp" as FE
+entity "API Server" as BE
+end box
+box "AWS"
+participant "<font color=black>Cognito <img:https://d2597oqac71veb.cloudfront.net/201406190823/images/cognito-icon.png {scale=0.1}>" as C #white 
+end box
+
+== Sign Up ==
+
+User -> FE : **""POST /signup""** with profile info
+FE -> C : **""CognitoAuth.signUp({email, password, name, country})""**
+C - -> FE : challengeName
+C - -> User: [Email] Verification code
+User -> FE : **""POST /confirm""** with verification code
+FE -> C : **""CognitoAuth.confirmSignUp({email, verificationCode})""**
+note across
+  Confirming signUp doesn't actually log the user in. So we have to call
+  **""CognitoAuth.logIn""** explicitly.
+end note
+
+== Log in ==
+
+FE -> C : **""CognitoAuth.logIn({email, password})""**
+C - -> FE : JWT, Refresh Token
+FE -> BE : JWT
+@enduml
+
+@startuml
+title "Cognito Auth"
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	DelayFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+hide footbox
+autonumber
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+
+actor User
+box "Your app"
+entity "React Webapp" as FE
+entity "API Server" as BE
+end box
+box "AWS"
+participant "<font color=black>Cognito <img:https://d2597oqac71veb.cloudfront.net/201406190823/images/cognito-icon.png {scale=0.1}>" as C #white 
+end box
+
+== Sign Up ==
+
+User -> FE : **""POST /signup""** with profile info
+FE -> C : **""CognitoAuth.signUp({email, password, name, country})""**
+C - -> FE : challengeName
+C - -> User: [Email] Verification code
+User -> FE : **""POST /confirm""** with verification code
+FE -> C : **""CognitoAuth.confirmSignUp({email, verificationCode})""**
+note across
+  Confirming signUp doesn't actually log the user in. So we have to call
+  **""CognitoAuth.logIn""** explicitly.
+end note
+
+== Log in ==
+
+FE -> C : **""CognitoAuth.logIn({email, password})""**
+C - -> FE : JWT, Refresh Token
+FE -> BE : JWT
+@enduml
+
+PlantUML version 1.2021.14beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
