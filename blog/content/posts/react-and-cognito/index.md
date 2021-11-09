@@ -190,8 +190,9 @@ AWS Cognito is a good option when it comes to user authentication and management
 already bought into the AWS ecosystem and it's also cheaper than some other alternatives.
 
 It's not too difficult to integrate React and Cognito, however Cognito's reference documentation for their
-Javascript/Typescript package leaves a lot to be desire, they also have several seemenly overlapping packages
-(`amplify`, `@aws-amplify/auth` and `amazon-cognito-identity-js`). They also tend to push Amplify as a whole
+Javascript/Typescript package lacks some in-depth detail, they also have several seemenly overlapping packages
+(`amplify`, `@aws-amplify/auth` and `amazon-cognito-identity-js`) that make it hard to pinpoint exactly which one
+is necessary for Cognito to work. Amazon also tends to push Amplify as a whole
 for the auth solution when it's not really necessary to add all that code to your app.
 
 **At [Xtages](https://www.xtages.com) we are building an all-in-one solution for CI/CD and hosting of apps, all with
