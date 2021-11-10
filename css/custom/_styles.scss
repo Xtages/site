@@ -117,3 +117,18 @@ img.founder {
 .zindex-n1 {
   z-index: -1 !important;
 }
+
+.comparison-table td,
+.comparison-table th,
+{
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  width: 16.6%;
+}
+
+.comparison-table td:first-child,
+.comparison-table th:first-child,
+{
+  text-align: initial;
+}
