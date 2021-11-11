@@ -7,13 +7,99 @@ abbr {
   text-decoration: none !important;
 }
 
-.card-pricing .subtitle {
-  font-size: 75%;
-}
-
 .card-pricing {
   min-height: 450px;
+  @extend .card;
+  @extend .border-0;
+  @extend .text-center;
+  @extend .px-3;
+
+  &.suggested {
+    @extend .bg-primary;
+  }
+
+  .card-header {
+    @extend .border-0;
+    @extend .delimiter-bottom;
+  }
+
+  .title {
+    @extend .h3;
+    //@extend .text-muted;
+  }
+
+  &.suggested {
+    .title {
+      @extend .h1;
+      @extend .text-white;
+    }
+  }
+
+  .price-line {
+    @extend .h1;
+    @extend .mb-0;
+  }
+
+  &.suggested {
+    .price-line {
+      @extend .text-white;
+    }
+  }
+
+  .subtitle {
+    @extend .text-sm;
+  }
+
+  &.suggested {
+    .subtitle {
+      @extend .text-white;
+    }
+  }
+
+  .card-body {
+    ul {
+      @extend .list-unstyled;
+      @extend .text-sm;
+      @extend .mb-4;
+    }
+
+    .coming-soon {
+      @extend .text-muted;
+      @extend .text-sm;
+    }
+  }
+
+  &.suggested {
+    .card-body {
+      ul {
+        @extend .text-white;
+        @extend .opacity-8;
+      }
+
+      .coming-soon {
+        @extend .text-white;
+        @extend .opacity-8;
+        @extend .text-sm;
+      }
+    }
+  }
+
+  .cta {
+    @extend .btn;
+    @extend .btn-sm;
+    @extend .btn-warning;
+    @extend .hover-translate-y-n3;
+    @extend .hover-shadow-lg;
+    @extend .mb-3;
+  }
+
+  &.suggested {
+    .cta {
+      @extend .btn-white;
+    }
+  }
 }
+
 
 .card[disabled]::after {
     content: "";

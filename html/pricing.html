@@ -52,183 +52,211 @@
             <!-- @endif -->
             <div class="row pricing mb-3 mt-4 shadow-none">
               <div class="col-lg-3">
-                <div class="card card-pricing border-0 text-center px-3">
-                  <div class="card-header border-0 delimiter-bottom">
+                <!-- FREE PLAN -->
+                <div class="card-pricing  <!-- @if ENABLE_FREE_PLAN_ONLY=true --> suggested<!-- @endif -->">
+                  <div class="card-header">
+                    <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+                    <h2 class="title">Free</h2>
+                    <div class="subtitle">no credit card required</div>
+                    <!-- @endif -->
                     <!-- @if ENABLE_WAITING_LIST=true -->
-                    <span class="h6 text-muted">Free</span>
-                    <div class="h1 text-center mb-0">$<span data-plan-price-id="free" class="price font-weight-bolder">0</span>
+                    <h2 class="title">Free</h2>
+                    <div class="price-line">
+                      $<span data-plan-price-id="free" class="price font-weight-bolder">0</span>
                     </div>
-                    <div class="text-sm">no credit card required</div>
+                    <div class="subtitle">no credit card required</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <span class="h6 text-muted">Free</span>
-                    <div class="h1 text-center mb-0">$<span data-plan-price-id="free" class="price font-weight-bolder">0</span>
+                    <h2 class="title">Free</h2>
+                    <div class="price-line">
+                      $<span data-plan-price-id="free" class="price font-weight-bolder">0</span>
                     </div>
-                    <div class="text-sm">no credit card required</div>
+                    <div class="subtitle">no credit card required</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
-                    <h2 class="h3 text-muted">Free</h2>
+                    <h2 class="title">Free</h2>
                     <!-- @endif -->
                   </div>
                   <div class="card-body">
-                    <ul class="list-unstyled text-sm mb-4">
+                    <ul>
                       <li>Deploy 1 app</li>
                       <li>100 CI/CD minutes (Linux)</li>
                       <li>1 GB of data-transfer</li>
                       <li>Deploys to the Xtages Cloud</li>
                       <li>Log collection</li>
-                      <li>Metrics dashboard <span class="text-muted text-sm">(coming soon)</span></li>
+                      <li>Metrics dashboard <span class="coming-soon">(coming soon)</span></li>
                     </ul>
+                    <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+                    <a href="https://console.xtages.com/signup"
+                       data-purchase-button="free" data-price-id=""
+                       data-plan-sku="free-yearly"
+                       onclick="return capturePurchase(this)"
+                       class="cta">Start for free</a>
+                    <!-- @endif -->
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <a href="#join-wait"
                        data-purchase-button="free" data-price-id=""
                        data-plan-sku="free-yearly"
                        onclick="return captureJoinWaitList(this)"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Join waiting list</a>
+                       class="cta">Join waiting list</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
                     <a href="https://console.xtages.com/signup"
                        data-purchase-button="free" data-price-id=""
                        data-plan-sku="free-yearly"
                        onclick="return capturePurchase(this)"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Start for free</a>
+                       class="cta">Start for free</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
-                    <a href="#join-title" data-plan-name="Free" onclick="return captureJoinMailingList(this, 'Free')"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Keep
-                      me updated</a>
+                    <a href="#join-title" data-plan-name="Free"
+                       onclick="return captureJoinMailingList(this, 'Free')"
+                       class="cta">Keep me updated</a>
                     <!-- @endif -->
                   </div>
                 </div>
               </div>
+
               <div class="col-lg-3">
-                <div class="card card-pricing text-center px-3 shadow border-0">
-                  <div class="card-header border-0 delimiter-bottom">
+                <!-- STARTER PLAN -->
+                <div class="card-pricing">
+                  <div class="card-header">
+                    <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+                    <h2 class="title">Starter</h2>
+                    <!-- @endif -->
                     <!-- @if ENABLE_WAITING_LIST=true -->
-                    <span class="h6 text-muted">Starter</span>
-                    <div class="h1 text-center mb-0">$<span data-plan-price-id="starter"
-                                                            class="price font-weight-bolder">150</span>
+                    <h2 class="title">Starter</h2>
+                    <div class="price-line">
+                      $<span data-plan-price-id="starter" class="price font-weight-bolder">150</span>
                     </div>
-                    <span data-plan-billing-info="starter" class="text-sm">per month, paid yearly</span>
+                    <div data-plan-billing-info="starter" class="subtitle">per month, paid yearly</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <span class="h6 text-muted">Starter</span>
-                    <div class="h1 text-center mb-0">$<span data-plan-price-id="starter"
-                                                            class="price font-weight-bolder">150</span>
+                    <h2 class="title">Starter</h2>
+                    <div class="price-line">
+                      $<span data-plan-price-id="starter" class="price font-weight-bolder">150</span>
                     </div>
-                    <span data-plan-billing-info="starter" class="text-sm">per month, paid yearly</span>
+                    <div data-plan-billing-info="starter" class="subtitle">per month, paid yearly</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
-                    <h2 class="h3 text-muted">Starter</h2>
+                    <h2 class="title">Starter</h2>
                     <!-- @endif -->
                   </div>
                   <div class="card-body">
-                    <ul class="list-unstyled text-sm mb-4">
+                    <ul>
                       <li>Deploy 1 app</li>
                       <li>2500 CI/CD minutes (Linux)</li>
                       <li>20 GB of data-transfer</li>
                       <li>Deploys to the Xtages Cloud</li>
                       <li>Log collection</li>
-                      <li>Metrics dashboard <span class="text-muted text-sm">(coming soon)</span></li>
+                      <li>Metrics dashboard <span class="coming-soon">(coming soon)</span></li>
                       <li>Support over email</li>
                     </ul>
+                    <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+                    <a href="#request-demo"
+                       data-purchase-button="starter" data-price-id="price_1JrxN0IfxICi4AQgOdyA0KrI"
+                       data-plan-sku="starter-yearly"
+                       onclick="return captureRequestDemo(this)"
+                       class="cta">Request demo</a>
+                    <!-- @endif -->
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <a href="#join-wait"
                        data-purchase-button="starter" data-price-id="price_1JrxN0IfxICi4AQgOdyA0KrI"
                        data-plan-sku="starter-yearly"
                        onclick="return captureJoinWaitList(this)"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Join waiting list</a>
+                       class="cta">Join waiting list</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
                     <a href="https://console.xtages.com/signup"
                        data-purchase-button="starter" data-price-id="price_1JrxN0IfxICi4AQgOdyA0KrI"
                        data-plan-sku="starter-yearly"
                        onclick="return capturePurchase(this)"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Purchase Starter</a>
+                       class="cta">Purchase Starter</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
                     <a href="#join-title" data-plan-name="Starter"
                        onclick="return captureJoinMailingList(this, 'Starter')"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Keep
+                       class="cta">Keep
                       me updated</a>
                     <!-- @endif -->
                   </div>
                 </div>
               </div>
+
               <div class="col-lg-3">
-                <div class="card card-pricing bg-primary border-0 text-center px-3">
-                  <div class="card-header border-0 delimiter-bottom">
+                <!-- PRO PLAN -->
+                <div class="card-pricing <!-- @if ENABLE_WAITING_LIST=true --> suggested<!-- @endif --><!-- @if ENABLE_DIRECT_PURCHASE=true --> suggested<!-- @endif --><!-- @if ENABLE_MAILING_LIST=true --> suggested<!-- @endif -->">
+                  <div class="card-header">
+                    <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+                    <h2 class="title">Professional</h2>
+                    <!-- @endif -->
                     <!-- @if ENABLE_WAITING_LIST=true -->
-                    <span class="h6 text-white">Professional</span>
-                    <div class="h1 text-white text-center mb-0">$<span data-plan-price-id="pro"
-                                                                       class="price font-weight-bolder">350</span></div>
-                    <span data-plan-billing-info="pro" class="text-sm text-white">per month, paid yearly</span>
+                    <h2 class="title">Professional</h2>
+                    <div class="price-line">
+                      $<span data-plan-price-id="pro" class="price font-weight-bolder">350</span>
+                    </div>
+                    <div data-plan-billing-info="pro" class="subtitle">per month, paid yearly</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <span class="h6 text-white">Professional</span>
-                    <div class="h1 text-white text-center mb-0">$<span data-plan-price-id="pro"
-                                                                       class="price font-weight-bolder">350</span></div>
-                    <span data-plan-billing-info="pro" class="text-sm text-white">per month, paid yearly</span>
+                    <h2 class="title">Professional</h2>
+                    <div class="price-line">
+                      $<span data-plan-price-id="pro" class="price font-weight-bolder">350</span>
+                    </div>
+                    <div data-plan-billing-info="pro" class="subtitle">per month, paid yearly</div>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
-                    <h2 class="h3 text-white">Professional</h2>
+                    <h2 class="title">Professional</h2>
                     <!-- @endif -->
                   </div>
                   <div class="card-body">
-                    <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                    <ul>
                       <li>Deploy up to 3 apps</li>
                       <li>7500 CI/CD minutes (Linux)</li>
                       <li>500 GB of data-transfer</li>
                       <li>Deploys to the Xtages Cloud</li>
                       <li>Log collection</li>
-                      <li>Metrics dashboard <span class="text-sm">(coming soon)</span></li>
+                      <li>Metrics dashboard <span class="coming-soon">(coming soon)</span></li>
                       <li>Support over email (24hr SLA)</li>
                     </ul>
+                    <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+                    <a href="#request-demo"
+                       data-purchase-button="pro" data-price-id="price_1JrxQUIfxICi4AQgdh0e4NG3"
+                       data-plan-sku="pro-yearly"
+                       onclick="return captureRequestDemo(this)"
+                       class="cta">Request demo</a>
+                    <!-- @endif -->
                     <!-- @if ENABLE_WAITING_LIST=true -->
                     <a href="#join-wait"
                        data-purchase-button="pro" data-price-id="price_1JrxQUIfxICi4AQgdh0e4NG3"
                        data-plan-sku="pro-yearly"
                        onclick="return captureJoinWaitList(this)"
-                       class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Join waiting list</a>
+                       class="cta">Join waiting list</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_DIRECT_PURCHASE=true -->
                     <a href="https://console.xtages.com/signup"
                        data-purchase-button="pro" data-price-id="price_1JrxQUIfxICi4AQgdh0e4NG3"
                        data-plan-sku="pro-yearly"
                        onclick="return capturePurchase(this)"
-                       class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Purchase Pro</a>
+                       class="cta">Purchase Pro</a>
                     <!-- @endif -->
                     <!-- @if ENABLE_MAILING_LIST=true -->
                     <a href="#join-title" data-plan-name="Professional"
                        onclick="return captureJoinMailingList(this, 'Professional')"
-                       class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3">Keep
-                      me updated</a>
+                       class="cta">Keep me updated</a>
                     <!-- @endif -->
                   </div>
                 </div>
               </div>
               <div class="col-lg-3">
-                <div class="card card-pricing text-center px-3 shadow border-0">
-                  <div class="card-header border-0 delimiter-bottom">
-                    <!-- @if ENABLE_WAITING_LIST=true -->
-                    <div class="h2 text-center mb-0">Enterprise</div>
-                    <span class="h6 text-muted">&nbsp;</span>
-                    <!-- @endif -->
-                    <!-- @if ENABLE_DIRECT_PURCHASE=true -->
-                    <div class="h2 text-center mb-0">Enterprise</div>
-                    <span class="h6 text-muted">&nbsp;</span>
-                    <!-- @endif -->
-                    <!-- @if ENABLE_MAILING_LIST=true -->
-                    <h2 class="h3 text-muted">Enterprise</h2>
-                    <!-- @endif -->
+                <div class="card-pricing">
+                  <div class="card-header">
+                    <h2 class="title">Enterprise</h2>
                   </div>
                   <div class="card-body">
                     <p class="my-7 h4">
                       Need more?
                     </p>
                     <a href="/contact.html" onclick="return captureJoinMailingList(this, 'Enterprise')"
-                       class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3">Contact
-                      Us!</a>
+                       class="cta">Contact Us!</a>
                   </div>
                 </div>
               </div>
@@ -249,7 +277,7 @@
 
   <section class="slice pb-0">
     <div class="container pt-lg-7">
-      <div class="row mb-6 justify-content-center text-center">
+      <div class="row mb-3 justify-content-center text-center">
         <div class="col-lg-8 col-md-10">
           <h3 class=" mt-4">Add-ons</h3>
         </div>
@@ -312,7 +340,43 @@
       </div>
     </div>
   </section>
-
+  
+  <!-- @if ENABLE_FREE_PLAN_ONLY=true -->
+  <section class="slice pb-0">
+    <div class="container pt-lg-5">
+      <div class="row mb-2 justify-content-center text-center">
+        <div class="col-lg-8 col-md-10">
+          <h3 id="request-demo" class="mt-4">Request demo</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div id="subscribe-thanks" class="text-center alert alert-outline-success" role="alert"
+               style="display: none;">We will be in contact very soon!
+          </div>
+          <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSfzlxEH_z_KhJXQ6MLq3aW6A1og5Rvqp_fbppGDVY3b_cN_GQ/formResponse"
+              onsubmit="return window.submitSubscribeForm(this);">
+            <div class="form-group">
+              <input class="form-control form-control-lg" type="text" placeholder="Your name"
+                     name="entry.2056720202">
+            </div>
+            <div class="form-group">
+              <input class="form-control form-control-lg" type="email" placeholder="email@example.com"
+                     name="entry.183805670" required>
+            </div>
+            <input aria-hidden="true" name="___honey___pot" style="display: none"/> <!-- bot protection -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-block btn-lg btn-warning mt-4">
+                <span class="btn-inner--text">Submit</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- @endif -->
   <!-- @if ENABLE_WAITING_LIST=true -->
   <section class="slice pb-0">
     <div class="container pt-lg-5">

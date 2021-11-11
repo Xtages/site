@@ -119,6 +119,7 @@ function copyHtml() {
                 ENABLE_MAILING_LIST: isBoolTrue(process.env.ENABLE_MAILING_LIST),
                 ENABLE_WAITING_LIST: isBoolTrue(process.env.ENABLE_WAITING_LIST),
                 ENABLE_DIRECT_PURCHASE: isBoolTrue(process.env.ENABLE_DIRECT_PURCHASE),
+                ENABLE_FREE_PLAN_ONLY: isBoolTrue(process.env.ENABLE_FREE_PLAN_ONLY),
             }
         }))
         .pipe(dest(paths.dist.base))
@@ -236,10 +237,11 @@ function validateMode(cb) {
     const enabledModes = [
         process.env.ENABLE_MAILING_LIST,
         process.env.ENABLE_WAITING_LIST,
-        process.env.ENABLE_DIRECT_PURCHASE
+        process.env.ENABLE_DIRECT_PURCHASE,
+        process.env.ENABLE_FREE_PLAN_ONLY,
     ].filter((e) => isBoolTrue(e));
     if (enabledModes.length > 1) {
-        cb(new Error('Only one of ENABLE_MAILING_LIST, ENABLE_WAITING_LIST, ENABLE_DIRECT_PURCHASE may be defined'));
+        cb(new Error('Only one of ENABLE_MAILING_LIST, ENABLE_WAITING_LIST, ENABLE_DIRECT_PURCHASE, ENABLE_FREE_PLAN_ONLY may be defined'));
     } else if (enabledModes.length === 0) {
         process.env.ENABLE_MAILING_LIST = true;
     }

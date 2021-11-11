@@ -176,6 +176,20 @@ function maybeDoGtag(method, event, argsMap) {
         });
     };
 
+    window['captureRequestDemo'] = function captureRequestDemo(anchor) {
+        const priceId = anchor.dataset.priceId;
+        window.___planName = anchor.dataset.planSku + '-demo';
+        maybeDoGtag('event', 'begin_checkout', {
+            'items': [{
+                'item_id': anchor.dataset.planSku,
+                'item_name': priceId,
+            }],
+            'event_callback': function () {
+                document.location = anchor.href;
+            }
+        });
+    };
+
     window['toggleBillingCycle'] = function toggleBillingCycle(button) {
         if (button.classList.contains('active')) {
             return;
