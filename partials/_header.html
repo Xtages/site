@@ -29,10 +29,18 @@
         </div>
         <!-- Main navigation -->
         <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
-          <li class="nav-item nav-item-spaced d-none d-lg-block">
-            <a class="nav-link" href="/overview.html">
-              Overview
-            </a>
+          <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
+            <a class="nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Product</a>
+            <div class="dropdown-menu p-0">
+              <div class="list-group list-group-flush">
+                  <a href="/overview.html" class="nav-link list-group-item list-group-item-action">
+                    <div class="ml-3">Overview</div>
+                  </a>
+                  <a href="/comparison.html" class="nav-link list-group-item list-group-item-action">
+                    <div class="ml-3">What makes us different?</div>
+                  </a>
+              </div>
+            </div>
           </li>
           <li class="nav-item nav-item-spaced d-none d-lg-block">
             <a class="nav-link" href="https://docs.xtages.com" target="_blank">
@@ -68,6 +76,9 @@
         <!-- Mobile button -->
         <div class="d-lg-none px-4 text-center">
           <a href="/overview.html" class="btn btn-sm btn-white btn-icon ml-3">Overview</a>
+        </div>
+        <div class="d-lg-none px-4 text-center">
+          <a href="/comparison.html" class="btn btn-sm btn-white btn-icon ml-3">What makes us different?</a>
         </div>
         <div class="d-lg-none px-4 text-center">
           <a href="https://docs.xtages.com" class="btn btn-sm btn-white btn-icon ml-3" target="_blank">Docs</a>

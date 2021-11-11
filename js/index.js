@@ -1,6 +1,7 @@
 const feather = require('feather-icons');
 window.jQuery = window.$ = require('jquery');
 require('bootstrap/js/dist/collapse');
+require('bootstrap/js/dist/dropdown');
 require('bootstrap/js/dist/modal');
 const lightbox = require('lightbox2');
 
