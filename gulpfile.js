@@ -212,7 +212,7 @@ function browserSyncInit(openTab) {
             server: {
                 baseDir: paths.dist,
             },
-            port: 3000,
+            port: 3002,
             open: openTab ? 'local' : false,
             notify: false,
             ghostMode: false,
