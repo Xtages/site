@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @include _head.html -->
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- @include _header.html -->
+
+    <!-- Main content -->
+    <section class="section-half-rounded bg-transparent pt-6 pb-10">
+        <!-- Jumbotron shape -->
+        <div class="jumbotron section-inner left-0 rounded-top-right bg-primary overflow-hidden col-xl-10 col-lg-11"></div>
+        <!-- Container -->
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <div class="col-xl-9 col-lg-11 offset-lg-1 offset-xl-2">
+                    <span class="badge badge-warning badge-pill">Explainer</span>
+                    <!-- Heading -->
+                    <h1 class="text-white mt-3 mb-4 pr-5">
+                        How Xtages works?
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-half-rounded bg-transparent py-5 mt-n10 zindex-101">
+        <!-- Jumbotron shape -->
+        <div class="jumbotron section-inner right-0 rounded-0 overflow-hidden col-xl-10 col-lg-12"></div>
+        <!-- Container -->
+        <div class="container pb-6">
+            <div class="row row-grid align-items-center">
+                <div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1">
+                    <article>
+                        <h2>Getting started</h2>
+                        <!-- List -->
+                        <ol class="list-unstyled list-bullet">
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">1</i></span>
+                                Install our GitHub App - <a href="https://github.com/apps/xtages-connector/">Xtages Connector</a>
+                                <a href="img/finish_setup.png" data-lightbox="image-1">
+                                    <img src="img/finish_setup.png" class="img-fluid py-4" alt="Screenshot: finish your setup wizard" />
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">2</i></span>
+                                Authorize Xtages Connector to have access to your organization
+                                <a href="img/authorize_gh_app.png" data-lightbox="image-2">
+                                    <img src="img/authorize_gh_app.png" class="img-fluid py-4" alt="Screenshot: authorize Xtages Connector GitHub app" />
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">3</span>
+                                Create an Xtages project
+                                <ol class="list-unstyled list-bullet">
+                                    <li class="py-2">
+                                        This will create a repository in your GitHub account based on our default template
+                                    </li>
+                                </ol>
+                                <a href="img/project_templates.png" data-lightbox="image-3">
+                                    <img src="img/project_templates.png" class="img-fluid py-4" alt="Screenshot: card to create a new Xtages project" />
+                                </a>
+                                <a href="img/create_project.png" data-lightbox="image-4">
+                                    <img src="img/create_project.png" class="img-fluid py-4" alt="Screenshot: form to create a new Xtages project" />
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">4</span>
+                                Once the repository is created we will automatically run the continuous integration (CI) workflow
+                                <ol class="list-unstyled list-bullet">
+                                    <li class="py-2">
+                                        The CI will run for each new push to your main or master branch
+                                    </li>
+                                </ol>
+                                <a href="img/build_running.png" data-lightbox="image-5">
+                                    <img src="img/build_running.png" class="img-fluid py-4" alt="Screenshot: CI build running" />
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">5</span>
+                                Once the build is successful, you can deploy to staging
+                                <a href="img/build_deployment.png" data-lightbox="image-6">
+                                    <img src="img/build_deployment.png" class="img-fluid py-4" alt="Screenshot: actions dropdown menu to deploy build to staging" />
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">6</span>
+                                The build running in staging can then be promoted to production
+                                <a href="img/build_promotion.png" data-lightbox="image-7">
+                                    <img src="img/build_promotion.png" class="img-fluid py-4" alt="Screenshot: actions dropdown menu to promote build to production" />
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">7</span>
+                                (optional) You can roll back the build that was deployed in production to the latest working version
+                            </li>
+                        </ol>
+                        <div>
+                            Worried about isolation? <a href="#create-org">Create a new organization in GitHub to restrict access to your code</a>.
+                        </div>
+                        <h2>Need a database?</h2>
+                        <p>
+                            We got it ready for you! If your service requires a DB we can provision one for you.
+                        </p>
+                        <p>
+                            Go to Resources and request your PostgreSQL database.
+                            You can interact with your DB by using the standard environment variables from Postgres.
+                            Check our <a href="https://docs.xtages.com/database/">documentation</a> to see how to connect to the DB.
+                        </p>
+                        <h2>Security</h2>
+                        <p>
+                            We take security very seriously and we would like you to understand how Xtages is built and our decisions around security.
+                        </p>
+                        <p>
+                        Here are some frequently asked questions regarding security:
+                        </p>
+                        <h3 id="create-org">Can I isolate the GitHub app installation?</h3>
+                        <p>
+                            Yes! You can create a sandbox GitHub organization, which is free and available for anyone, using this <a href="https://github.com/organizations/plan">link</a> and
+                            install the Xtages Connector GitHub app there. When you create a new Xtages project, a repository will be created under that
+                            GitHub organization.
+                        </p>
+                        <h3>How are the permissions requested in the GitHub app being used?</h3>
+                        <p>
+                            Our permissions are required so we can:
+                        </p>
+                        <ol class="list-unstyled list-bullet">
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">1</span>
+                                create a repository when a new Xtages project is created
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">2</span>
+                                be notified when a new push is made to your main (or master) branch. (coming soon) Execute pre-checks
+                                every time a PR is opened or updated
+                            </li>
+                            <li class="py-2">
+                                <span class="badge badge-circle rounded-circle badge-success mr-2" aria-hidden="true">3</span>
+                                pull code from your repository, so we can run tests, build and deploy your server app.
+                            </li>
+                        </ol>
+                        <h3>How is my database secured?</h3>
+                        <p>
+                            We manage the database instance for you. We create a password for it that you can access through environment variables.
+                            This password is created and stored in a secret manager where they are encrypted and secure.
+                            That being said, you can change the password to the instance and we won’t have access to it.
+                        </p>
+                        <p>
+                            Your data is encrypted at rest and your database instance is not shared. If you ever decide to
+                            leave Xtages you can take your data with you.
+                        </p>
+                        <h3>How is my service secured?</h3>
+                        <p>
+                            We give our customers an *.xtages.dev HTTPS URL to access their service, this ensures that the
+                            information in transit is secure.
+                            Xtages also provides the capability to associate your own domain and point it to your service
+                            running in production. You can read more about that in our <a href="https://docs.xtages.com/projects/custom-domains/">documentation</a>.
+                        </p>
+                        <h3>How are my logs secured?</h3>
+                        <p>
+                            Your build and application/service logs are encrypted at rest.
+                        </p>
+                        <h3>Do you have a secrets manager?</h3>
+                        <p>
+                            We currently don’t have a secrets manager, though we’re planning to add that capability very soon.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="shape-container shape-position-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2560px" height="100px" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="injected-svg svg-inject fill-section-secondary">
+                <polygon id="Path" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- @include _footer.html -->
+</body>
+
+</html>
